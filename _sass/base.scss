@@ -1,0 +1,22 @@
+html {
+    font-size: 16px;
+    font-family: 'Roboto Mono', 'Montserrat';
+}
+
+body {
+    margin: auto;
+    text-align: center;
+    border-top: 6px solid $primary-color;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 0.2em 0.7em;
+    color: white;
+    font-family: 'Share Tech Mono';
+    text-decoration: none;
+    background-color: $primary-color;
+}
