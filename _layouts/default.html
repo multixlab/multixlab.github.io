@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <meta http-equiv="refresh" content="5">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
@@ -16,12 +14,54 @@
 
 <body>
 
+    <header>
+        <a class="logo">multixlab</a>
+    </header>
 
-    <a class="logo">multixlab</a>
+    <section>
 
-    {{ content }}
+        <aside class="column left blue">
+            <div class="content">
+                {% include nav.html %}
+            </div>
+        </aside>
 
-    {% include common.html %}
+        <article id="content" class="column middle red">
+            {{ content }}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+            {% include common.html %}
+
+        </article>
+
+        <aside class="column right blue">
+            <div class="content">
+                {% include nav.html %}
+                {% include common.html %}
+            </div>
+        </aside>
+
+
+    </section>
+
+    <footer class="blue">
+        {% include common.html %}
+    </footer>
 
 
 </body>
