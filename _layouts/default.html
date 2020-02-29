@@ -15,44 +15,30 @@
 <body>
 
     <header>
-        <a class="logo">multixlab</a>
+
+        <div class="content">
+            <a class="logo noselect" href="/">multixlab</a>
+
+            {% include nav.html %}
+        </div>
+
     </header>
 
     <section>
 
         <aside class="column left blue">
             <div class="content">
-                {% include nav.html %}
+               
             </div>
         </aside>
 
         <article id="content" class="column middle red">
             {{ content }}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-            {% include common.html %}
-
         </article>
 
         <aside class="column right blue">
             <div class="content">
-                {% include nav.html %}
-                {% include common.html %}
+              
             </div>
         </aside>
 
@@ -60,7 +46,7 @@
     </section>
 
     <footer class="blue">
-        {% include common.html %}
+        
     </footer>
 
 

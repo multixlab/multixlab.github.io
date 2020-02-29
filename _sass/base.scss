@@ -1,73 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
 html {
     font-size: 16px;
     font-family: 'Montserrat';
 }
 
+// 1px solid #dfdfdf border
+// #fff content background
+
 body {
     margin: auto;
-    text-align: center;
-    border-top: 6px solid $primary-color;
-}
-
-.logo {
-    margin: auto;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.6rem;
-    padding: 0.4% 0.7%;
-    color: white;
-    font-family: 'Share Tech Mono';
-    text-decoration: none;
-    background-color: $primary-color;
-}
-
-.blue {
-    background-color: yellow;
-}
-
-.red {
-    background-color: red;
+    background: #f0f0f0;
 }
 
 
-.column {
-    float: left;
-    margin: auto;
-
+.noselect {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-%left-right-width {
-    width: 30%;
-}
+// .blue {
+//     background-color: yellow;
+// }
 
-.left {
-    @extend %left-right-width;
-
-    .content {
-        padding-right: 1rem;
-    }
-}
-
-.right {
-    @extend %left-right-width;
-
-    .content {
-        padding-left: 1rem;
-    }
-}
+// .red {
+//     background-color: red;
+// }
 
 
-.middle {
-    width: 40%;
-}
+// .column {
+//     float: left;
+//     margin: auto;
+
+// }
+
+// %left-right-width {
+//     width: 30%;
+// }
+
+// .left {
+//     @extend %left-right-width;
+
+//     .content {
+//         padding-right: 1rem;
+//     }
+// }
+
+// .right {
+//     @extend %left-right-width;
+
+//     .content {
+//         padding-left: 1rem;
+//     }
+// }
 
 
-section {
-    margin-top: 2.5rem;
-}
+// .middle {
+//     width: 40%;
+// }
 
-section:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
+// section {
+//     margin-top: 2.5rem;
+// }
+
+// .content:after {
+//     content: "";
+//     display: table;
+//     clear: both;
+// }
