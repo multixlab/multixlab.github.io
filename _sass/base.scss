@@ -1,3 +1,7 @@
+$column-spacing: 0.6rem;
+$content-background: #fff;
+$content-border-color: #dfdfdf;
+
 * {
     margin: 0;
     padding: 0;
@@ -14,8 +18,6 @@ html {
     font-family: 'Montserrat';
 }
 
-// 1px solid #dfdfdf border
-// #fff content background
 
 body {
     margin: auto;
@@ -33,53 +35,72 @@ body {
     user-select: none;
 }
 
-// .blue {
-//     background-color: yellow;
-// }
+.content {
+    width: 75%;
+    margin: auto;
+}
 
-// .red {
-//     background-color: red;
-// }
+.content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.yellow {
+    background-color: yellow;
+}
 
-// .column {
-//     float: left;
-//     margin: auto;
-
-// }
-
-// %left-right-width {
-//     width: 30%;
-// }
-
-// .left {
-//     @extend %left-right-width;
-
-//     .content {
-//         padding-right: 1rem;
-//     }
-// }
-
-// .right {
-//     @extend %left-right-width;
-
-//     .content {
-//         padding-left: 1rem;
-//     }
-// }
+.red {
+    background-color: red;
+}
 
 
-// .middle {
-//     width: 40%;
-// }
+.column {
+    float: left;
+    margin: auto;
+}
 
 
-// section {
-//     margin-top: 2.5rem;
-// }
+.left {
+    width: 70%;
 
-// .content:after {
-//     content: "";
-//     display: table;
-//     clear: both;
-// }
+    .spacing {
+        padding-right: $column-spacing;
+    }
+
+}
+
+.right {
+    width: 30%;
+
+    .spacing {
+        padding-left: $column-spacing;
+    }
+}
+
+.content-area {
+    margin: auto;
+    padding: 1rem;
+    background-color: $content-background;
+    border: 1px solid $content-border-color;
+}
+
+@media (max-width: $medium-breakpoint) {
+
+    .right,
+    .left {
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .spacing {
+            padding: 0rem;
+        }
+    }
+
+}
+
+@media (max-width: $large-breakpoint) {
+    .content {
+        width: 98%;
+    }
+}
