@@ -14,21 +14,21 @@ $header-background-overlay: #1b1b1b;
 
 header {
 
-    margin-bottom: $header-height;
     height: $header-height;
     background: $header-background;
+    margin-bottom: $header-height * 0.8;
 
     a:hover {
         color: yellow;
     }
 
+}
 
-    .content:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
+header:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .logo {
@@ -70,10 +70,12 @@ nav {
 
     header {
         height: 100%;
+        margin-bottom: $header-height * 0.5;
     }
 
     .logo {
         width: 100%;
+        padding: 0rem;
         display: flex;
         margin-bottom: 2px;
         justify-content: center;
@@ -93,4 +95,10 @@ nav {
         }
     }
 
+}
+
+@media (max-width: $medium-breakpoint) {
+    header {
+        margin-bottom: $header-height * 0.5;
+    }
 }

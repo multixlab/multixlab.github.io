@@ -15,38 +15,43 @@
 <body>
 
     <header>
+        <a class="logo noselect" href="{{site.baseurl}}">
+            multixlab
+        </a>
 
-        <div class="content">
-            <a class="logo noselect" href="/">multixlab</a>
-
-            {% include nav.html %}
-        </div>
-
+        {% include nav.html %}
     </header>
 
-    <section>
+    <section class="content">
 
-        <aside class="column left blue">
-            <div class="content">
-               
-            </div>
-        </aside>
 
-        <article id="content" class="column middle red">
-            {{ content }}
-        </article>
 
-        <aside class="column right blue">
-            <div class="content">
-              
-            </div>
-        </aside>
+        <div class="column left red">
+            <article>
+                <div class="spacing">
+                    <div class="content-area">
+                        {{ content }}
+                       </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="column right yellow">
+            <aside>
+                <div class="spacing">
+                   <div class="content-area">
+                    {{ content }}
+                   </div>
+                </div>
+            </aside>
+
+        </div>
 
 
     </section>
 
     <footer class="blue">
-        
+
     </footer>
 
 
