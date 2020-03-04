@@ -2,12 +2,14 @@ $primary-color: #222222;
 $logo-color: #ffffff;
 
 $small-breakpoint: 600px;
-$medium-breakpoint: 750px;
+$medium-breakpoint: 800px;
 $large-breakpoint: 1200px;
 
 $page-width: 100%;
+
 $content-width: 75%;
 $content-width-small: 98%;
+$max-content-width: 960px;
 
 /* Extra small devices (phones, 600px and down) */
 //@media only screen and (max-width: 600px) {...}

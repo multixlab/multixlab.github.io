@@ -42,8 +42,8 @@ body {
 
 .content {
   margin: auto;
-  max-width: 960px;
   width: $content-width;
+  max-width: $max-content-width;
 }
 
 .content:after {
@@ -69,6 +69,7 @@ body {
 
 .left {
   width: 70%;
+
   .spacing {
     padding-right: $column-spacing;
   }
