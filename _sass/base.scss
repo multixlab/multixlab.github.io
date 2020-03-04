@@ -1,106 +1,109 @@
-$column-spacing: 0.6rem;
-$content-background: #fff;
-$content-border-color: #dfdfdf;
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 html {
-    font-size: 16px;
-    font-family: 'Montserrat';
+  font-size: 16px;
+  font-family: 'Montserrat', serif;
 }
 
 
 body {
-    margin: auto;
-    background: #f0f0f0;
+  margin: auto;
+  background: #f0f0f0;
 }
 
 
 .noselect {
-    cursor: pointer;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.page-width {
+  margin: auto;
+  width: $page-width;
 }
 
 .content {
-    width: 75%;
-    margin: auto;
+  margin: auto;
+  width: $content-width;
+  max-width: $max-content-width;
 }
 
 .content:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.yellow {
-    background-color: yellow;
+/*.yellow {
+  background-color: yellow;
 }
 
 .red {
-    background-color: red;
-}
+  background-color: red;
+}*/
 
 
 .column {
-    float: left;
-    margin: auto;
+  float: left;
+  margin: auto;
 }
 
 
 .left {
-    width: 70%;
+  width: 70%;
 
-    .spacing {
-        padding-right: $column-spacing;
-    }
+  .spacing {
+    padding-right: $column-spacing;
+  }
 
 }
 
 .right {
-    width: 30%;
+  width: 30%;
 
-    .spacing {
-        padding-left: $column-spacing;
-    }
+  .spacing {
+    padding-left: $column-spacing;
+  }
 }
 
-.content-area {
-    margin: auto;
-    padding: 1rem;
-    background-color: $content-background;
-    border: 1px solid $content-border-color;
+.display-area {
+  margin: auto;
+  padding: $column-spacing * 2;
+  border: 1px solid $border-color;
+  background-color: $content-background;
 }
 
 @media (max-width: $medium-breakpoint) {
 
-    .right,
-    .left {
-        width: 100%;
-        margin-bottom: 1rem;
+  .right,
+  .left {
+    width: 100%;
+    margin-bottom: 1rem;
 
-        .spacing {
-            padding: 0rem;
-        }
+    .spacing {
+      padding: 0;
     }
+  }
 
 }
 
 @media (max-width: $large-breakpoint) {
-    .content {
-        width: 98%;
-    }
+  .content {
+    width: $content-width-small;
+  }
 }
