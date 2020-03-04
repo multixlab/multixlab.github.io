@@ -1,6 +1,3 @@
-$column-spacing: 0.6rem;
-$content-background: #fff;
-$content-border-color: #dfdfdf;
 
 * {
   margin: 0;
@@ -52,13 +49,13 @@ body {
   clear: both;
 }
 
-.yellow {
+/*.yellow {
   background-color: yellow;
 }
 
 .red {
   background-color: red;
-}
+}*/
 
 
 .column {
@@ -86,9 +83,9 @@ body {
 
 .display-area {
   margin: auto;
-  padding: 1rem;
+  padding: $column-spacing * 2;
+  border: 1px solid $border-color;
   background-color: $content-background;
-  border: 1px solid $content-border-color;
 }
 
 @media (max-width: $medium-breakpoint) {
