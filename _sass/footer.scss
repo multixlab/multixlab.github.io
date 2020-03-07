@@ -1,0 +1,11 @@
+.footer {
+  clear: both;
+  display: flex;
+  overflow: auto;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  height: $footer-height;
+  margin-top: -$footer-height;
+}

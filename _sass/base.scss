@@ -21,6 +21,10 @@ body {
   background: #f0f0f0;
 }
 
+body, html {
+  height: 100%;
+}
+
 
 .noselect {
   cursor: pointer;
@@ -37,6 +41,11 @@ body {
   width: $page-width;
 }
 
+.container {
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+}
+
 .content {
   margin: auto;
   width: $content-width;
@@ -49,13 +58,13 @@ body {
   clear: both;
 }
 
-/*.yellow {
+.yellow {
   background-color: yellow;
 }
 
 .red {
   background-color: red;
-}*/
+}
 
 
 .column {
@@ -63,9 +72,13 @@ body {
   margin: auto;
 }
 
+@mixin left-right($margin-bottom) {
+  margin-bottom: $margin-bottom;
+}
 
 .left {
   width: 70%;
+  @include left-right($header-margin-bottom);
 
   .spacing {
     padding-right: $column-spacing;
@@ -75,6 +88,7 @@ body {
 
 .right {
   width: 30%;
+  @include left-right($header-margin-bottom);
 
   .spacing {
     padding-left: $column-spacing;
@@ -93,17 +107,23 @@ body {
   .right,
   .left {
     width: 100%;
-    margin-bottom: 1rem;
+    @include left-right(1rem);
 
     .spacing {
       padding: 0;
     }
   }
-
 }
 
 @media (max-width: $large-breakpoint) {
   .content {
     width: $content-width-small;
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+  header {
+    height: auto;
+    margin-bottom: $header-margin-bottom-small;
   }
 }
