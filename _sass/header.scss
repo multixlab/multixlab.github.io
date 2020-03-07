@@ -1,7 +1,7 @@
 
 header {
 
-  font-weight: bold;
+  font-weight: 500;
   height: $header-height;
   margin-bottom: $header-margin-bottom;
 
@@ -33,13 +33,14 @@ nav {
   padding-left: $content-padding;
   align-items: center;
   display: inline-flex;
+  color: #8c9297;
   height: $header-height;
 
   a {
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
-    color: $header-text-color;
+    color: #8c9297;
     padding-right: $content-padding;
   }
 

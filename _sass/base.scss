@@ -19,6 +19,7 @@ html {
 body {
   margin: auto;
   color: #323f4b;
+  line-height: 1.65;
   background: #f0f0f0;
 }
 
@@ -94,9 +95,6 @@ body, html {
 
 .display-area {
   margin: auto;
-  padding: $column-spacing * 2;
-  border: 1px solid $border-color;
-  background-color: $content-background;
 }
 
 @media (max-width: $medium-breakpoint) {
