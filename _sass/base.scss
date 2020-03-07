@@ -95,6 +95,9 @@ body, html {
 
 .display-area {
   margin: auto;
+  padding: $column-spacing * 2;
+  border: 1px solid $border-color;
+  background-color: $content-background;
 }
 
 @media (max-width: $medium-breakpoint) {
