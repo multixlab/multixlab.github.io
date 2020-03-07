@@ -72,13 +72,8 @@ body, html {
   margin: auto;
 }
 
-@mixin left-right($margin-bottom) {
-  margin-bottom: $margin-bottom;
-}
-
 .left {
   width: 70%;
-  @include left-right($header-margin-bottom);
 
   .spacing {
     padding-right: $column-spacing;
@@ -88,7 +83,6 @@ body, html {
 
 .right {
   width: 30%;
-  @include left-right($header-margin-bottom);
 
   .spacing {
     padding-left: $column-spacing;
@@ -107,7 +101,7 @@ body, html {
   .right,
   .left {
     width: 100%;
-    @include left-right(1rem);
+    margin-bottom: 1rem;
 
     .spacing {
       padding: 0;
