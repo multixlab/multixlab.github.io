@@ -1,9 +1,8 @@
 
-
 header {
 
+  font-weight: bold;
   height: $header-height;
-  background: $header-background;
   margin-bottom: $header-margin-bottom;
 
   a:hover {
@@ -22,24 +21,19 @@ header:after {
 .logo {
   font-size: 1.6rem;
   align-items: center;
-  padding: 0 $content-padding;
   display: inline-flex;
   height: $header-height;
   color: $header-text-color;
-  font-family: $header-font;
-  background-color: $header-background-overlay;
+
 }
 
 
 nav {
-
   float: right;
   padding-left: $content-padding;
   align-items: center;
   display: inline-flex;
   height: $header-height;
-  font-family: $header-font;
-  background-color: $header-background-overlay;
 
   a {
     font-size: 1.3rem;
@@ -48,6 +42,11 @@ nav {
     color: $header-text-color;
     padding-right: $content-padding;
   }
+
+  a:last-child {
+    padding-right: 0;
+  }
+
 }
 
 
