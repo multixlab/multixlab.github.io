@@ -14,48 +14,59 @@
 
 <body>
 
-<header>
+<div class="container">
+
+    <header>
+
+        <div class="page-width">
+            <a class="logo noselect" href="{{site.baseurl}}">
+                multixlab
+            </a>
+
+            {% include nav.html %}
+        </div>
+
+    </header>
+
+    <section class="page-width container">
+
+        <div class="content">
+            <div class="column left red">
+                <article>
+                    <div class="spacing">
+                        <div class="display-area">
+                            {{ content }}
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="column right yellow">
+                <aside>
+                    <div class="spacing">
+                        <div class="display-area">
+                            <h4>Subscribe</h4>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</div>
+
+<footer class="footer">
 
     <div class="page-width">
-        <a class="logo noselect" href="{{site.baseurl}}">
-            multixlab
-        </a>
 
-        {% include nav.html %}
-    </div>
-
-</header>
-
-<section class="page-width">
-
-    <div class="content">
-        <div class="column left red">
-            <article>
-                <div class="spacing">
-                    <div class="display-area">
-                        {{ content }}
-                    </div>
-                </div>
-            </article>
+        <div class="content">
+            {{ site.title }} © {{ site.time | date: '%Y' }}
         </div>
-
-        <div class="column right yellow">
-            <aside>
-                <div class="spacing">
-                    <div class="display-area">
-                        <h4>Subscribe</h4>
-                    </div>
-                </div>
-            </aside>
-
-        </div>
-
     </div>
-
-
-</section>
-
-<footer class="blue">
 
 </footer>
 

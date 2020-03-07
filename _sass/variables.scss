@@ -1,3 +1,4 @@
+/* commons */
 $primary-color: #222222;
 $logo-color: #ffffff;
 
@@ -15,17 +16,21 @@ $border-color: #dfdfdf;
 $column-spacing: 0.6rem;
 $content-background: #fff;
 
-/* Extra small devices (phones, 600px and down) */
-//@media only screen and (max-width: 600px) {...}
+/* footer variables*/
+$footer-height: 60px;
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-//@media only screen and (min-width: 600px) {...}
+/* header variables */
 
-/* Medium devices (landscape tablets, 768px and up) */
-//@media only screen and (min-width: 768px) {...}
+$header-height: 3rem;
+$content-padding: 1.5rem;
 
-/* Large devices (laptops/desktops, 992px and up) */
-//@media only screen and (min-width: 992px) {...}
+$header-text-color: #fff;
+$header-font: 'Share Tech Mono';
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-//@media only screen and (min-width: 1200px) {...}
+$header-background: #0e0e0e;
+$header-background-overlay: #1b1b1b;
+$header-margin-bottom: $header-height * 0.8;
+$header-margin-bottom-small: $header-height * 0.5;
+
+
+
