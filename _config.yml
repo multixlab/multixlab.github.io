@@ -14,3 +14,7 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed
+
+exclude: [README.md, Gemfile, Gemfile.lock, .idea, node_modules,
+          gulpfile.js, package.json, _site, Makefile, src, vendor,
+          CNAME, LICENSE, Rakefile]
