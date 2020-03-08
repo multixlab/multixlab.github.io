@@ -1,6 +1,7 @@
 <nav>
-    <a href="/">Home</a>
-    <a href="/">Categories</a>
-    <a href="/">Tags</a>
-    <a href="/">About</a>
+
+    {% for nav in site.data.nav %}
+    <a href="{{ nav.url }}">{{ nav.title }}</a>
+    {% endfor %}
+
 </nav>

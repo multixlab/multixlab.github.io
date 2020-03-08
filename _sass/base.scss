@@ -20,6 +20,13 @@ body, html {
   height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: $weight-medium;
+}
+
 a {
   text-decoration: none;
 }
@@ -60,23 +67,6 @@ a:hover {
   margin: auto;
 }
 
-.left {
-  width: 70%;
-
-  .spacing {
-    padding-right: $column-spacing;
-  }
-
-}
-
-.right {
-  width: 30%;
-
-  .spacing {
-    padding-left: $column-spacing;
-  }
-}
-
 .display-area {
   margin: auto;
   padding: $column-spacing * 2;
@@ -84,21 +74,3 @@ a:hover {
   background-color: $color-display-background;
 }
 
-@media (max-width: $medium-breakpoint) {
-
-  .right,
-  .left {
-    width: 100%;
-
-    .spacing {
-      padding: 0;
-    }
-  }
-
-  .left {
-    margin-bottom: 1rem;
-  }
-  .right {
-    margin-bottom: 0;
-  }
-}
