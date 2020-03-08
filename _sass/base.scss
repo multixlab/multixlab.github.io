@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-
-a {
-  text-decoration: none;
-}
-
-
 html {
   font-size: 16px;
   font-family: 'Ubuntu', sans-serif;
@@ -35,6 +29,15 @@ body, html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: $hover-color;
 }
 
 
