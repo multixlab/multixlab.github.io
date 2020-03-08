@@ -81,6 +81,14 @@ a:hover {
   background-color: $color-page;
 }
 
+@media (max-width: $small-breakpoint) {
+
+  body {
+    font-size: 14px;
+  }
+
+}
+
 @media (max-width: $medium-breakpoint) {
 
   .content {
