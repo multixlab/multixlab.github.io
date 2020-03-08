@@ -1,0 +1,27 @@
+$post-margin: 1.5rem;
+
+.post {
+
+  margin-bottom: $post-margin;
+  border-bottom: 1px solid $color-border;
+
+  .date {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    padding-right: 0.5rem;
+    display: inline-block;
+    color: #7b7b7b;
+  }
+
+  .title {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+}
