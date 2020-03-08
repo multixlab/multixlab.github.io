@@ -80,3 +80,19 @@ a:hover {
   padding: 0.4rem;
   background-color: $color-page;
 }
+
+@media (max-width: $medium-breakpoint) {
+
+  .content {
+    width: $content-width-medium;
+  }
+
+}
+
+@media (min-width: $large-breakpoint) {
+
+  .content {
+    width: $content-width-large;
+  }
+
+}
