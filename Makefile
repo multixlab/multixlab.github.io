@@ -4,7 +4,9 @@ default:
 rebase:
 	@{ \
 	set -e; \
-	if [ -n "$$(git status --porcelain)" ]; then echo "there are changes to commit"; else \
+	git fetch; \
+	if [ -n "$$(git status --porcelain)" ]; then echo "there are changes to commit";  \
+	elif [ -n "$$(git log --oneline origin/dev..HEAD)" ]; then echo "some changes are not pushed to remote"; else \
 	git checkout master; \
 	git rebase dev; \
 	git push; \
