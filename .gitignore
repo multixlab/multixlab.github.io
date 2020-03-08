@@ -5,3 +5,4 @@ Gemfile.lock
 .idea/*
 !.idea/dictionaries
 !.idea/inspectionProfiles
+!.idea/runConfigurations
