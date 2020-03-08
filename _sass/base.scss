@@ -89,10 +89,16 @@ a:hover {
   .right,
   .left {
     width: 100%;
-    margin-bottom: 1rem;
 
     .spacing {
       padding: 0;
     }
+  }
+
+  .left {
+    margin-bottom: 1rem;
+  }
+  .right {
+    margin-bottom: 0;
   }
 }

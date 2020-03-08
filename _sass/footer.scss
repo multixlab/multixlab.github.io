@@ -2,10 +2,10 @@
   clear: both;
   display: flex;
   overflow: auto;
-  font-weight: 500;
   position: relative;
   text-align: center;
   align-content: center;
   height: $footer-height;
   margin-top: -$footer-height;
+  font-weight: $weight-medium;
 }
