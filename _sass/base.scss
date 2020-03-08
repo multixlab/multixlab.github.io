@@ -11,23 +11,13 @@ html {
 
 body {
   margin: auto;
-  color: #323f4b;
   line-height: 1.65;
-  background: #f0f0f0;
+  color: $primary-color;
+  background: $page-color;
 }
 
 body, html {
   height: 100%;
-}
-
-
-.noselect {
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 a {
@@ -39,21 +29,23 @@ a:hover {
   color: $hover-color;
 }
 
-
-.page-width {
-  margin: auto;
-  width: $page-width;
-}
-
+/*
+  Container for all top body content except footer.
+  Footer is maintained on the bottom based on this
+  container.
+ */
 .container {
   min-height: 100%;
   margin-bottom: -$footer-height;
 }
 
+/*
+  Area where content of the page is displayed.
+ */
 .content {
   margin: auto;
   width: $content-width;
-  max-width: $max-content-width;
+  max-width: $content-width-max;
 }
 
 .content:after {
@@ -61,16 +53,6 @@ a:hover {
   display: table;
   clear: both;
 }
-
-/*
-.yellow {
-  background-color: yellow;
-}
-
-.red {
-  background-color: red;
-}
-*/
 
 
 .column {
@@ -99,7 +81,7 @@ a:hover {
   margin: auto;
   padding: $column-spacing * 2;
   border: 1px solid $border-color;
-  background-color: $content-background;
+  background-color: $content-background-color;
 }
 
 @media (max-width: $medium-breakpoint) {
