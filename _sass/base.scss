@@ -4,52 +4,56 @@
   padding: 0;
 }
 
-
-a {
-  text-decoration: none;
-}
-
-
 html {
   font-size: 16px;
-  font-family: 'Montserrat', serif;
+  font-family: 'Ubuntu', sans-serif;
 }
-
 
 body {
   margin: auto;
-  background: #f0f0f0;
+  line-height: 1.65;
+  color: $color-primary;
+  background: $color-page;
 }
 
 body, html {
   height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-weight: $weight-medium;
+}
 
-.noselect {
+a {
+  text-decoration: none;
+}
+
+a:hover {
   cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  color: $color-hover;
 }
 
-
-.page-width {
-  margin: auto;
-  width: $page-width;
-}
-
+/*
+  Container for all top body content except footer.
+  Footer is maintained on the bottom based on this
+  container.
+ */
 .container {
   min-height: 100%;
   margin-bottom: -$footer-height;
 }
 
+/*
+  Area where content of the page is displayed.
+ */
 .content {
   margin: auto;
   width: $content-width;
-  max-width: $max-content-width;
+  max-width: $content-width-max;
 }
 
 .content:after {
@@ -58,66 +62,21 @@ body, html {
   clear: both;
 }
 
-.yellow {
-  background-color: yellow;
-}
-
-.red {
-  background-color: red;
-}
-
 
 .column {
   float: left;
   margin: auto;
 }
 
-.left {
-  width: 70%;
-
-  .spacing {
-    padding-right: $column-spacing;
-  }
-
-}
-
-.right {
-  width: 30%;
-
-  .spacing {
-    padding-left: $column-spacing;
-  }
-}
-
 .display-area {
   margin: auto;
   padding: $column-spacing * 2;
-  border: 1px solid $border-color;
-  background-color: $content-background;
+  border: 1px solid $color-border;
+  background-color: $color-display-background;
 }
 
-@media (max-width: $medium-breakpoint) {
 
-  .right,
-  .left {
-    width: 100%;
-    margin-bottom: 1rem;
-
-    .spacing {
-      padding: 0;
-    }
-  }
-}
-
-@media (max-width: $large-breakpoint) {
-  .content {
-    width: $content-width-small;
-  }
-}
-
-@media (max-width: $medium-breakpoint) {
-  header {
-    height: auto;
-    margin-bottom: $header-margin-bottom-small;
-  }
+.highlight {
+  padding: 0.4rem;
+  background-color: $color-page;
 }

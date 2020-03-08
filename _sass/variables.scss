@@ -1,36 +1,26 @@
 /* commons */
-$primary-color: #222222;
-$logo-color: #ffffff;
+
+$weight-medium: 500;
 
 $small-breakpoint: 600px;
 $medium-breakpoint: 800px;
 $large-breakpoint: 1200px;
 
-$page-width: 100%;
+/* page */
 
 $content-width: 75%;
 $content-width-small: 98%;
-$max-content-width: 960px;
+$content-width-max: 960px;
 
-$border-color: #dfdfdf;
+/* column */
+
 $column-spacing: 0.6rem;
-$content-background: #fff;
 
-/* footer variables*/
+/* footer */
+
 $footer-height: 60px;
 
-/* header variables */
+/* header  */
 
-$header-height: 3rem;
-$content-padding: 1.5rem;
-
-$header-text-color: #fff;
-$header-font: 'Share Tech Mono';
-
-$header-background: #0e0e0e;
-$header-background-overlay: #1b1b1b;
-$header-margin-bottom: $header-height * 0.8;
-$header-margin-bottom-small: $header-height * 0.5;
-
-
-
+$header-height: 6rem;
+$header-content-padding: 1.5rem;

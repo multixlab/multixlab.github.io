@@ -3,3 +3,5 @@ _site/
 Gemfile.lock
 .sass-cache/
 .idea/*
+!.idea/dictionaries
+!.idea/inspectionProfiles

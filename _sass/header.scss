@@ -1,17 +1,14 @@
 
-
 header {
 
   height: $header-height;
-  background: $header-background;
-  margin-bottom: $header-margin-bottom;
+  font-weight: $weight-medium;
 
   a:hover {
-    color: #dada00;
+    color: $color-primary;
   }
 
 }
-
 
 header:after {
   content: "";
@@ -22,53 +19,47 @@ header:after {
 .logo {
   font-size: 1.6rem;
   align-items: center;
-  padding: 0 $content-padding;
   display: inline-flex;
   height: $header-height;
-  color: $header-text-color;
-  font-family: $header-font;
-  background-color: $header-background-overlay;
+  color: $color-primary;
 }
 
 
 nav {
-
   float: right;
-  padding-left: $content-padding;
   align-items: center;
   display: inline-flex;
   height: $header-height;
-  font-family: $header-font;
-  background-color: $header-background-overlay;
+  color: $color-secondary;
+  padding-left: $header-content-padding;
 
   a {
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
-    color: $header-text-color;
-    padding-right: $content-padding;
+    color: $color-secondary;
+    padding-right: $header-content-padding;
   }
+
+  a:last-child {
+    padding-right: 0;
+  }
+
 }
 
 
 @media (max-width: $small-breakpoint) {
-  $padding: 1.2rem;
-
-  header {
-    height: 100%;
-    margin-bottom: $header-height * 0.5;
-  }
+  $padding: 1rem;
 
   .logo {
     width: 100%;
-    padding: 0;
+    height: auto;
     display: flex;
-    margin-bottom: 2px;
+    padding: $padding 0 0;
     justify-content: center;
   }
 
   nav {
-
     width: 100%;
     height: 100%;
     float: none;
@@ -86,6 +77,5 @@ nav {
 @media (max-width: $medium-breakpoint) {
   header {
     height: auto;
-    margin-bottom: $header-margin-bottom-small;
   }
 }

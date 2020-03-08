@@ -1,5 +1,15 @@
 ---
 layout: default
 ---
-{% include common.html %}
 
+{% for post in site.posts limit:10 %}
+
+<div class="post">
+    <a class="title">{{ post.title }}</a>
+    <h3 class="date">{{ post.date | date_to_string }}</h3>
+    <p>
+        {{ post.excerpt }}
+    </p>
+</div>
+
+{% endfor %}
