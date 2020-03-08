@@ -2,16 +2,14 @@
 layout: default
 ---
 
-{% for post in site.posts %}
+{% for post in site.posts limit:10 %}
 
 <div class="post">
     <a class="title">{{ post.title }}</a>
     <h3 class="date">{{ post.date | date_to_string }}</h3>
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        {{ post.excerpt }}
     </p>
-
 </div>
 
 {% endfor %}

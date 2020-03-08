@@ -10,11 +10,6 @@ tags:
 - handlers
 ---
 
-{% include toc.html %}
-
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 This is part one of looper/handler API series
 
 - [Looper/Handler API - Part 1]({{site.url}}/looper-handler-api/){:.blue}

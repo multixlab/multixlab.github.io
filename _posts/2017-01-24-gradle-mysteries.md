@@ -8,11 +8,6 @@ date: 2017-01-24
 tags: gradle
 ---
 
-{% include toc.html %}
-
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 Gradle is a build tool based on Groovy. If you are not familiar with Groovy, gradle scripts will not make sense to you at first. Like everything else, you need to put decent amount of time to learn the basic concepts. In this article, I will skim through many of the concepts that will be helpful in better understanding of gradle.
 
 

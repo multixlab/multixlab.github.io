@@ -8,12 +8,6 @@ date: 2017-01-30
 tags: [android, loaders]
 ---
 
-{% include toc.html %}
-
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
-
 This is part 2 of **Loaders** article series
 
 - [Getting familiar with Loaders - Part 1]({{site.url}}/loaders-part-1){:.blue}

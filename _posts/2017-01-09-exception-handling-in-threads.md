@@ -8,9 +8,6 @@ date: 2017-01-09
 tags: [java, threads]
 ---
 
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 By contract, [Runnable#run](https://docs.oracle.com/javase/7/docs/api/java/lang/Runnable.html) method does not allow **throwing exceptions**. Possible ways of handling exceptions are `try/catch blocks` or setting `exception handler` on thread or thread group.
 
 A thread or thread group allows us to set an exception handler on it, to receive exceptions occured during the execution of thread.

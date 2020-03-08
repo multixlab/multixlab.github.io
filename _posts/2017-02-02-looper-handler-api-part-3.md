@@ -12,11 +12,6 @@ message_link: "https://developer.android.com/reference/android/os/Message.html"
 queue_link: "https://developer.android.com/reference/android/os/MessageQueue.html"
 ---
 
-{% include toc.html %}
-
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 This is part 3 of looper/handler API series
 
 - [Looper/Handler API - Part 1]({{site.url}}/looper-handler-api/){:.blue}

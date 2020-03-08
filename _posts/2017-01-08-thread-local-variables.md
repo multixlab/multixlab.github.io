@@ -8,10 +8,6 @@ date: 2017-01-08
 tags: [java, threads]
 ---
 
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
-
 Normally, when an object is **shared** by multiple threads, depending on the *access modifier* each thread can access the *same field* in object and change in that field can be propagated to all other threads. 
 
 That's the default behaviour, but sometimes we want each thread to have its own **local copy** of the field. In this way, every change to that field will be visible in that thread **only**.

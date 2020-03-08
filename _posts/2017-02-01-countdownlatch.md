@@ -9,9 +9,6 @@ tags: [java, threads]
 latch: "https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CountDownLatch.html"
 ---
 
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 A [CountDownLatch]({{page.latch}}){:.blue} is a synchronisation mechanism which allows threads to wait until some events occur. By using `CountDownLatch` you can wait for events to happen in **other threads**
 and can proceed only if they have completed.
 

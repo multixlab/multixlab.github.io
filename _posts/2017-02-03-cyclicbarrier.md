@@ -9,11 +9,6 @@ tags: [java, threads]
 cblink: "https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/CyclicBarrier.html"
 ---
 
-{% include toc.html %}
-
-last modified: {{ page.modified | downcase }} 
-{: .last_modified }
-
 [CyclicBarrier]({{cblink}}){:.blue} is useful in situations where you want each thread in a set of threads to reach at specific execution point
 before moving further.
 

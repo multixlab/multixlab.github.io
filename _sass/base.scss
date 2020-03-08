@@ -23,7 +23,8 @@ body, html {
 h1,
 h2,
 h3,
-h4 {
+h4,
+strong {
   font-weight: $weight-medium;
 }
 
@@ -74,3 +75,8 @@ a:hover {
   background-color: $color-display-background;
 }
 
+
+.highlight {
+  padding: 0.4rem;
+  background-color: $color-page;
+}
