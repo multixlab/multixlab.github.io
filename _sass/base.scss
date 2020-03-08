@@ -12,8 +12,8 @@ html {
 body {
   margin: auto;
   line-height: 1.65;
-  color: $primary-color;
-  background: $page-color;
+  color: $color-primary;
+  background: $color-page;
 }
 
 body, html {
@@ -26,7 +26,7 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: $hover-color;
+  color: $color-hover;
 }
 
 /*
@@ -80,8 +80,8 @@ a:hover {
 .display-area {
   margin: auto;
   padding: $column-spacing * 2;
-  border: 1px solid $border-color;
-  background-color: $content-background-color;
+  border: 1px solid $color-border;
+  background-color: $color-display-background;
 }
 
 @media (max-width: $medium-breakpoint) {
@@ -106,6 +106,5 @@ a:hover {
 @media (max-width: $medium-breakpoint) {
   header {
     height: auto;
-    margin-bottom: $header-margin-bottom-small;
   }
 }

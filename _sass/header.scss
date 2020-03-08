@@ -5,7 +5,7 @@ header {
   font-weight: $weight-medium;
 
   a:hover {
-    color: $primary-color;
+    color: $color-primary;
   }
 
 }
@@ -30,14 +30,14 @@ nav {
   align-items: center;
   display: inline-flex;
   height: $header-height;
-  color: $secondary-color;
+  color: $color-secondary;
   padding-left: $header-content-padding;
 
   a {
     font-size: 1.3rem;
     text-decoration: none;
     display: inline-block;
-    color: $secondary-color;
+    color: $color-secondary;
     padding-right: $header-content-padding;
   }
 
