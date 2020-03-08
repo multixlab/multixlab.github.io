@@ -96,15 +96,3 @@ a:hover {
     }
   }
 }
-
-@media (max-width: $large-breakpoint) {
-  .content {
-    width: $content-width-small;
-  }
-}
-
-@media (max-width: $medium-breakpoint) {
-  header {
-    height: auto;
-  }
-}
