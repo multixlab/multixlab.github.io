@@ -46,7 +46,12 @@
   .title {
     display: block;
     font-size: 1.7em;
+    color: $color-primary;
     font-weight: $weight-medium;
+  }
+
+  .title:hover {
+    color: $color-hover;
   }
 
   .date {
