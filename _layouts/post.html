@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% include header.html %}
 
-</body>
-</html>
+<section>
+
+    <div class="content">
+        <div class="column left">
+            <article class="spacing">
+
+                <div class="display-area">
+
+                    <h1>{{ page.title }}</h1>
+
+                    {{ content }}
+                </div>
+
+            </article>
+        </div>
+
+        <div class="column right">
+            <aside class="spacing">
+
+                <div class="display-area">
+                    <h4>Subscribe</h4>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% include footer.html %}

@@ -1,71 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include header.html %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css"/>
-
-    <title>Home</title>
-</head>
-
-<body>
-
-<div class="container">
-
-    <header>
-
-        <div class="content">
-            <a class="logo" href="{{site.baseurl}}">
-                multixlab
-            </a>
-
-            {% include nav.html %}
-        </div>
-
-    </header>
-
-    <section>
-
-        <div class="content">
-            <div class="column left">
-                <article class="spacing">
-
-                    <div class="display-area">
-                        {{ content }}
-                    </div>
-
-                </article>
-            </div>
-
-            <div class="column right">
-                <aside class="spacing">
-
-                    <div class="display-area">
-                        <h4>Subscribe</h4>
-                    </div>
-
-                </aside>
-
-            </div>
-
-        </div>
-
-    </section>
-
-</div>
-
-<footer class="footer">
+<section>
 
     <div class="content">
-        {{ site.title }} © {{ site.time | date: '%Y' }}
+        <div class="column left">
+            <article class="spacing">
+
+                <div class="display-area">
+                    {{ content }}
+                </div>
+
+            </article>
+        </div>
+
+        <div class="column right">
+            <aside class="spacing">
+
+                <div class="display-area">
+                    <h4>Subscribe</h4>
+                </div>
+
+            </aside>
+
+        </div>
+
     </div>
 
-</footer>
+</section>
 
-
-</body>
-
-</html>
+{% include footer.html %}
