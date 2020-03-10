@@ -11,9 +11,9 @@ html {
 
 body {
   margin: auto;
-  line-height: 1.65;
   color: $color-primary;
   background: $color-page;
+  line-height: $line-height;
 }
 
 body, html {
@@ -31,6 +31,11 @@ strong {
 h1 {
   font-size: 2rem;
 }
+
+h2 {
+  font-size: 1.5rem;
+}
+
 
 a {
   text-decoration: none;
