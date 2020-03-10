@@ -1,30 +1,32 @@
 {% include header.html %}
 
 
-        <div class="column left">
-            <article class="spacing">
+<div class="column left">
+    <article class="spacing">
 
-                <div class="display-area">
+        <div class="display-area">
 
-                    <h1>{{ page.title }}</h1>
+            <div class="post">
+                <h1>{{ page.title }}</h1>
 
-                    {{ content }}
-                </div>
-
-            </article>
-        </div>
-
-        <div class="column right">
-            <aside class="spacing">
-
-                <div class="display-area">
-                    {% include subscribe.html %}
-                </div>
-
-            </aside>
+                {{ content }}
+            </div>
 
         </div>
 
+    </article>
+</div>
+
+<div class="column right">
+    <aside class="spacing">
+
+        <div class="display-area">
+            {% include subscribe.html %}
+        </div>
+
+    </aside>
+
+</div>
 
 
 {% include footer.html %}

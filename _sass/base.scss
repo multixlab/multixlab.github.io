@@ -36,7 +36,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -84,19 +83,34 @@ a:hover {
   background-color: $color-display-background;
 }
 
+pre {
+  overflow: auto;
+}
 
 .highlight {
-  padding: 0.4rem;
+  padding: 0.5rem;
   background-color: $color-page;
 }
 
-@media (max-width: $small-breakpoint) {
 
-  body {
-    font-size: 14px;
-  }
-
+p code, li code {
+  border: 0;
+  margin: 0 2px;
+  padding: 0 5px;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 3px;
+  white-space: nowrap;
+  background-color: #efefef;
 }
+
+blockquote {
+  margin: 2rem;
+  padding: 0 0.5em;
+  font-style: italic;
+  border-left: 5px solid #8ab3b5;
+}
+
 
 @media (max-width: $medium-breakpoint) {
 
