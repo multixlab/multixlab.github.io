@@ -87,6 +87,10 @@ pre {
   overflow: auto;
 }
 
+.sidebar {
+  margin-bottom: $column-spacing * 2;
+}
+
 .highlight {
   padding: 0.5rem;
   background-color: $color-page;
