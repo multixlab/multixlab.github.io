@@ -18,10 +18,10 @@ header:after {
 
 .logo {
   font-size: 1.6rem;
+  color: $color-logo;
   align-items: center;
   display: inline-flex;
   height: $header-height;
-  color: $color-primary;
 }
 
 .current {
