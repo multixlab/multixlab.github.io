@@ -73,4 +73,9 @@
 
 .home-post:last-child {
   border: none;
+  margin-bottom: 0;
+
+  .date {
+    margin-bottom: 0;
+  }
 }
