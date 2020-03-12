@@ -36,16 +36,16 @@
   }
 }
 
-.post {
+.home-post {
 
-  $post-margin: 1.5rem;
+  $post-margin: 1.2rem;
 
   margin-bottom: $post-margin;
   border-bottom: 1px solid $color-border;
 
   .title {
     display: block;
-    font-size: 1.7em;
+    font-size: 1.5em;
     color: $color-primary;
     font-weight: $weight-medium;
   }
@@ -55,9 +55,10 @@
   }
 
   .date {
-    font-size: 1rem;
+    font-size: 0.9rem;
     display: inline-block;
     color: $color-subtitle;
+    margin-bottom: $post-margin;
     font-weight: $weight-medium;
   }
 
@@ -68,6 +69,6 @@
 
 }
 
-.post:last-child {
+.home-post:last-child {
   border: none;
 }

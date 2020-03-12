@@ -1,0 +1,30 @@
+.post {
+
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  h2,
+  h3,
+  h4{
+    margin: 1.5rem 0;
+  }
+
+  p {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+  }
+
+  .date {
+    margin-bottom: 1rem;
+    color: $color-subtitle;
+    font-weight: $weight-medium;
+  }
+
+  $list-margin: $column-spacing * 3;
+
+  ul,
+  ol {
+    margin: $list-margin;
+  }
+}
