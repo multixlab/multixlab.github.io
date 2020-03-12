@@ -8,9 +8,9 @@ date: 2017-03-07
 tags:
 - android
 - views
-link1: "https://allaudin.github.io/custom-views-1/"
-link2: "https://allaudin.github.io/custom-views-2/"
-link3: "https://allaudin.github.io/custom-views-3/"
+link1: "/custom-views-1/"
+link2: "/custom-views-2/"
+link3: "/custom-views-3/"
 view: "https://developer.android.com/reference/android/view/View.html"
 viewparent: "https://developer.android.com/reference/android/view/ViewParent.html"
 viewgroup: "https://developer.android.com/reference/android/view/ViewGroup.html"
@@ -20,9 +20,9 @@ style_const: "https://developer.android.com/reference/android/view/View.html#Vie
 
 This is part 1 of three part series
 
-- [Part 1]({{page.link1}}){:.blue}
-- [Part 2]({{page.link2}}){:.blue}
-- [Part 3]({{page.link3}}){:.blue}
+- [Part 1]({{site.url}}{{page.link1}}){:.blue}
+- [Part 2]({{site.url}}{{page.link2}}){:.blue}
+- [Part 3]({{site.url}}{{page.link3}}){:.blue}
 
 
 ## Background
@@ -147,4 +147,4 @@ View(Context context, AttributeSet attrs)
 > One last thing, I took me a while to understand what each constructor is for, if this is the case with you, don't worry! I will go through them 
 > again while writing an example view. For now, keep this theory in mind and move forward.
 
-Read part 2 [here]({{page.link2}}){:.blue}.
+Read part 2 [here]({{site.url}}{{page.link2}}){:.blue}.

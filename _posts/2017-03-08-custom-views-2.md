@@ -8,18 +8,18 @@ date: 2017-03-08
 tags:
 - android
 - views
-link1: "https://allaudin.github.io/custom-views-1/"
-link2: "https://allaudin.github.io/custom-views-2/"
-link3: "https://allaudin.github.io/custom-views-3/"
+link1: "/custom-views-1/"
+link2: "/custom-views-2/"
+link3: "/custom-views-3/"
 ---
 
 This is part 1 of three part series
 
-- [Part 1]({{page.link1}}){:.blue}
-- [Part 2]({{page.link2}}){:.blue}
-- [Part 3]({{page.link3}}){:.blue}
+- [Part 1]({{site.url}}{{page.link1}}){:.blue}
+- [Part 2]({{site.url}}{{page.link2}}){:.blue}
+- [Part 3]({{site.url}}{{page.link3}}){:.blue}
 
-In [part 1]({{page.link1}}){:.blue}, I have discussed core view classes and view types of view constructor. This article focuses on view drawing in its
+In [part 1]({{site.url}}{{page.link1}}){:.blue}, I have discussed core view classes and view types of view constructor. This article focuses on view drawing in its
 layout in parent view.
 
 At high level, a view is created in **two** phases.
