@@ -7,9 +7,6 @@ layout: default
 <div class="home-post">
     <a class="title" href="{{site.url}}{{post.url}}">{{ post.title }}</a>
     <h3 class="date">{{ post.date | date_to_string }}</h3>
-    <p>
-        {{ post.excerpt }}
-    </p>
 </div>
 
 {% endfor %}
