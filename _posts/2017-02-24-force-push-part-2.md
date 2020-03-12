@@ -6,14 +6,14 @@ category: git
 comments: true
 tags: [git]
 date: 2017-02-24
-part1: "https://allaudin.github.io/force-push-part-1/"
-part2: "https://allaudin.github.io/force-push-part-2/"
+part1: "/force-push-part-1/"
+part2: "/force-push-part-2/"
 ---
 
 This is part *II* of two part series about force pushing in git.
 
-- [Part I]({{page.part1}}){:.blue}
-- [Part II]({{page.part2}}){:.blue}
+- [Part I]({{site.url}}{{page.part1}}){:.blue}
+- [Part II]({{site.url}}{{page.part2}}){:.blue}
 
 In [previous]({{page.part1}}){:.blue} article, we have discussed theory about `force push`. In this article, I will try to demonstrate all the
 scenarios by creating local repositories.
