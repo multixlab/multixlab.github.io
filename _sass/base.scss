@@ -87,7 +87,7 @@ pre {
   overflow: auto;
 }
 
-.sidebar {
+.sidebar-margin {
   margin-bottom: $column-spacing * 2;
 }
 
@@ -115,6 +115,11 @@ blockquote {
   border-left: 5px solid #8ab3b5;
 }
 
+
+.equal-box {
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: $medium-breakpoint) {
 

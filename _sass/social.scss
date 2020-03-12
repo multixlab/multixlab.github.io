@@ -7,6 +7,14 @@
   text-decoration: none;
 }
 
+.social {
+  a {
+    margin-right: 5px;
+  }
+  a:last-child {
+    margin: 0;
+  }
+}
 .fa:hover {
   opacity: 0.7;
 }
