@@ -8,6 +8,7 @@
 
             <div class="post">
                 <h1>{{ page.title }}</h1>
+                <div class="meta">{{ page.date | date_to_string }}, <a>{{page.category}}</a> <a>{{page.tags}}</a></div>
 
                 {{ content }}
             </div>

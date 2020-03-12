@@ -38,9 +38,11 @@
 
 .home-post {
 
-  $post-margin: 1.2rem;
+  $margin-bottom: 1.2rem;
 
-  margin-bottom: $post-margin;
+  margin-bottom: $margin-bottom;
+  margin-left: $display-inside-margin;
+  margin-right: $display-inside-margin;
   border-bottom: 1px solid $color-border;
 
   .title {
@@ -58,13 +60,13 @@
     font-size: 0.9rem;
     display: inline-block;
     color: $color-subtitle;
-    margin-bottom: $post-margin;
+    margin-bottom: $margin-bottom;
     font-weight: $weight-medium;
   }
 
   p {
-    margin-top: $post-margin * 0.7;
-    margin-bottom: $post-margin;
+    margin-top: $margin-bottom * 0.7;
+    margin-bottom: $margin-bottom;
   }
 
 }
