@@ -1,0 +1,16 @@
+.side-category {
+
+  a {
+    color: $color-category;
+    display: block;
+    margin: 0.5rem 1rem;
+  }
+
+  a:visited {
+    color: $color-category;
+  }
+
+  a:last-child {
+    margin-bottom: 0;
+  }
+}
