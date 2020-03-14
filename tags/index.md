@@ -11,7 +11,9 @@ layout: default
 <!-- Build the Page -->
 
 <!-- List of all tags -->
-<ul class="tags">
+<div class="tags">
+
+<ul class="tag-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <li>
@@ -21,3 +23,31 @@ layout: default
     </li>
   {% endunless %}{% endfor %}
 </ul>
+
+<!-- Posts by Tag -->
+<div class="post-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+    <h2 id="{{ this_word | cgi_escape }}">{{ this_word | capitalize }}</h2>
+ 
+     {% for post in site.tags[this_word] %}{% if post.title != null %}
+        <ul class="post" >
+          <li >
+         
+            <a href="{{ post.url }}">{{ post.title  }}
+        
+        <span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> 
+        
+        </a>
+        
+         
+          </li>
+            </ul>
+         
+        {% endif %}{% endfor %}
+  
+   
+  {% endunless %}{% endfor %}
+</div>
+
+</div>

@@ -16,46 +16,5 @@
 }
 
 .categories {
-
   margin: 0 $display-inside-margin;
-
-  h2 {
-    font-size: 1.8rem;
-    margin: 1.5rem 0;
-  }
-
-  h2:first-child {
-    margin-top: 0;
-  }
-
-  .posts {
-    font-size: 1.1rem;
-    margin: $column-spacing $column-spacing * 4;
-  }
-
-  .post-date {
-    color: $color-subtitle;
-  }
-
-  a {
-    display: block;
-    color: $color-hover;
-
-    span {
-      display: inline-block;
-    }
-
-    span:before {
-      content: " ";
-    }
-  }
-
-
-  a:visited {
-    color: $color-hover;
-  }
-
-  a:hover {
-    color: $color-primary;
-  }
 }
