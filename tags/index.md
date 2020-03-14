@@ -3,6 +3,8 @@ title: Tags
 layout: default
 ---
 
+ <h1 class="center">All {{ page.title }}</h1>
+ 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 
 <!-- `tag_words` is a sorted array of the tag names. -->
