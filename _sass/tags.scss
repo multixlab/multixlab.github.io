@@ -2,6 +2,7 @@
   margin: 0 $display-inside-margin;
 }
 
+.tag-sidebar,
 .tag-list {
 
   margin: 1.5rem 0;
@@ -21,4 +22,16 @@
     }
   }
 
+}
+
+.tag-sidebar {
+  margin: 0;
+
+  li {
+    font-size: 1rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
 }

@@ -7,12 +7,8 @@ layout: default
  
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 
-<!-- `tag_words` is a sorted array of the tag names. -->
 {% assign tag_words = site_tags | split:',' | sort %}
 
-<!-- Build the Page -->
-
-<!-- List of all tags -->
 <div class="tags">
 
 <ul class="tag-list">
@@ -26,7 +22,7 @@ layout: default
   {% endunless %}{% endfor %}
 </ul>
 
-<!-- Posts by Tag -->
+
 <div class="post-list">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
