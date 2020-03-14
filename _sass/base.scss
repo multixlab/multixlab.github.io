@@ -101,19 +101,7 @@ pre {
 
 .highlight {
   padding: 0.8rem;
-  background-color: $color-highlight;
-}
-
-
-p code, li code {
-  border: 0;
-  margin: 0 2px;
-  padding: 0 5px;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 3px;
-  white-space: nowrap;
-  background-color: #efefef;
+  background-color: $color-code-highlight;
 }
 
 blockquote {
