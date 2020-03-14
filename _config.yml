@@ -20,4 +20,5 @@ exclude: [README.md, Gemfile, Gemfile.lock, .idea, node_modules,
           CNAME, LICENSE, Rakefile]
 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
