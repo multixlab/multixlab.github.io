@@ -7,30 +7,14 @@
   margin: 1.5rem 0;
 
   li {
-    margin: 0.3rem 0.5rem 0.3rem 0;
-    padding: 0.22rem 0.5rem;
     display: inline-block;
+    padding: 0.22rem 0.5rem;
+    margin: 0.3rem 0.5rem 0.3rem 0;
     border: 1px solid $color-border;
   }
 
-  a,
-  a:visited {
+  a {
     color: $color-link;
   }
 
-  a:hover {
-    color: $color-hover;
-  }
-
-  .posts {
-
-    a,
-    a:visited {
-      color: $color-hover;
-    }
-
-    a:hover {
-      color: $color-primary;
-    }
-  }
 }
