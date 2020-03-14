@@ -6,7 +6,7 @@
     <div class="side-category">
         {% for category in site.categories %}
 
-       <a href="/">{{ category | first | capitalize }}</a>
+        <a href="{{ site.url }}/categories/#{{ category | first | capitalize }}">{{ category | first | capitalize }}</a>
 
         {% endfor %}
     </div>

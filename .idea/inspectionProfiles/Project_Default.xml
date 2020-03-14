@@ -10,6 +10,9 @@
     <inspection_tool class="CssUnknownTarget" enabled="true" level="ERROR" enabled_by_default="true">
       <scope name="Open Files" level="INFORMATION" enabled="true" />
     </inspection_tool>
+    <inspection_tool class="HtmlUnknownAnchorTarget" enabled="true" level="WARNING" enabled_by_default="true">
+      <scope name="Open Files" level="INFORMATION" enabled="true" />
+    </inspection_tool>
     <inspection_tool class="HtmlUnknownTarget" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="Open Files" level="INFORMATION" enabled="true" />
     </inspection_tool>

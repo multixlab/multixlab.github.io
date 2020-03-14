@@ -13,11 +13,17 @@
     margin: 1.5rem 0;
   }
 
+  a,
+  a:visited {
+    color: $color-link;
+  }
+
   .meta {
     color: $color-subtitle;
     font-size: $display-inside-margin;
 
-    a {
+    a,
+    a:visited {
       display: inline;
     }
   }
