@@ -34,7 +34,7 @@ layout: default
         <ul class="post" >
           <li >
          
-            <a href="{{ post.url }}">{{ post.title  }}
+            <a href="{{site.url}}{{ post.url }}">{{ post.title  }}
         
         <span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> 
         
