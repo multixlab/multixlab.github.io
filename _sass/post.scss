@@ -16,14 +16,17 @@
   a,
   a:visited {
     color: $color-link;
+
+    &:hover {
+      color: $color-hover;
+    }
   }
 
   .meta {
     color: $color-subtitle;
     font-size: $display-inside-margin;
 
-    a,
-    a:visited {
+    a {
       display: inline;
     }
   }

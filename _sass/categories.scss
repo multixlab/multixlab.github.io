@@ -1,18 +1,23 @@
 .side-category {
 
   a {
-    color: $color-category;
     display: block;
     margin: 0.5rem 1rem;
-  }
-
-  a:visited {
     color: $color-category;
+
+    &:visited {
+      color: $color-category;
+    }
+
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  a:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .categories {

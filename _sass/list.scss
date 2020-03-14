@@ -25,14 +25,20 @@
     span {
       display: inline-block;
     }
+
+    &:visited {
+      color: $color-hover;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+
   }
 
 
-  a:visited {
-    color: $color-hover;
-  }
-
-  a:hover {
-    color: $color-primary;
-  }
 }

@@ -43,15 +43,19 @@ h2 {
   text-align: center;
 }
 
-a,
-a:visited {
+a {
   text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color-hover;
+  }
 }
 
-a:hover {
-  cursor: pointer;
-  color: $color-hover;
-}
 
 /*
   Container for all top body content except footer.
