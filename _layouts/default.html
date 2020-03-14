@@ -21,6 +21,9 @@
 
         {% include categories.html %}
 
+        {% if page.url != "/tags/" %}
+          {% include tags.html %}
+        {% endif %}
 
     </aside>
 

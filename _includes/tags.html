@@ -1,0 +1,25 @@
+<div class="display-area sidebar-margin">
+
+    <h3 class="sidebar-title">Tags</h3>
+
+
+    <div>
+        <ul class="tag-sidebar">
+
+            {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+            {% assign tag_words = site_tags | split:',' | sort %}
+
+            {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+            {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+            <li>
+                <a href="{{site.url}}/tags/#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
+                    <span>({{ site.tags[this_word].size }})</span>
+                </a>
+            </li>
+            {% endunless %}{% endfor %}
+        </ul>
+    </div>
+
+
+</div>
