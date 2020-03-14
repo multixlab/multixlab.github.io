@@ -1,0 +1,36 @@
+.tags {
+  margin: 0 $display-inside-margin;
+}
+
+.tag-list {
+
+  margin-bottom: 1.5rem;
+
+  li {
+    margin: 0.3rem 0.5rem 0.3rem 0;
+    padding: 0.22rem 0.5rem;
+    display: inline-block;
+    border: 1px solid $color-border;
+  }
+
+  a,
+  a:visited {
+    color: $color-link;
+  }
+
+  a:hover {
+    color: $color-hover;
+  }
+
+  .posts {
+
+    a,
+    a:visited {
+      color: $color-hover;
+    }
+
+    a:hover {
+      color: $color-primary;
+    }
+  }
+}
