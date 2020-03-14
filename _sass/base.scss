@@ -19,6 +19,7 @@ body {
 
 body, html {
   height: 100%;
+  overflow-x: hidden;
   font: 0.9em/1.692307em;
 }
 
@@ -82,7 +83,7 @@ a:hover {
   margin: auto;
   padding: $column-spacing * 2;
   border: 1px solid $color-border;
-  //background-color: $color-display-background;
+  background-color: $color-display-background;
 }
 
 pre {
@@ -93,9 +94,13 @@ pre {
   margin-bottom: $column-spacing * 2;
 }
 
+.sidebar-title {
+  margin-bottom: 1rem;
+}
+
 .highlight {
-  padding: 0.5rem;
-  background-color: $color-page;
+  padding: 0.8rem;
+  background-color: $color-highlight;
 }
 
 
