@@ -1,0 +1,17 @@
+.toc {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100%;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+  background-color: #dfdfdf;
+
+  a {
+    display: block;
+  }
+}
+
+.active {
+  color: black;
+}
