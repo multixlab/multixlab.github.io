@@ -22,4 +22,8 @@
 
 .categories {
   margin: 0 $display-inside-margin;
+
+  @media (max-width: $small-breakpoint) {
+    margin: 0;
+  }
 }

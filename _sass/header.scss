@@ -8,13 +8,15 @@ header {
     color: $color-primary;
   }
 
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 }
 
-header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .logo {
   font-size: 1.6rem;
