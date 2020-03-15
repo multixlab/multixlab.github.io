@@ -125,10 +125,15 @@ blockquote {
   justify-content: center;
 }
 
+
 @media (max-width: $medium-breakpoint) {
 
   .content {
     width: $content-width-medium;
+  }
+
+  .sidebar-margin:last-child {
+    margin-bottom: 0
   }
 
 }

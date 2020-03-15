@@ -69,13 +69,19 @@
     margin-bottom: $margin-bottom;
   }
 
-}
-
-.home-post:last-child {
-  border: none;
-  margin-bottom: 0;
-
-  .date {
+  &:last-child {
+    border: none;
     margin-bottom: 0;
+
+    .date {
+      margin-bottom: 0;
+    }
+  }
+
+
+  @media (max-width: $small-breakpoint) {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
+
