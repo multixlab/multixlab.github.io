@@ -27,8 +27,7 @@ body, html {
 h1,
 h2,
 h3,
-h4,
-strong {
+h4 {
   font-weight: $weight-medium;
 }
 
@@ -46,6 +45,11 @@ h2 {
 
 em {
   background-color: $color-emphasis;
+}
+
+strong {
+  font-weight: $weight-medium;
+  border-bottom: 1.5px solid $color-subtitle;
 }
 
 a {
