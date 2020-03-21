@@ -28,7 +28,7 @@
 
   .meta {
     color: $color-subtitle;
-    font-size: $display-inside-margin;
+    font-size: 0.9rem;
 
     a {
       display: inline;
@@ -51,5 +51,126 @@
   ul,
   ol {
     margin: $list-margin;
+  }
+}
+
+.sticky {
+  left: 0;
+  top: 1rem;
+  position: sticky;
+  position: -webkit-sticky;
+}
+
+#toc,
+#small-toc {
+  a {
+    display: block;
+    margin-top: 0.5rem;
+    color: $color-blue;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:visited {
+      color: $color-blue;
+    }
+
+    &:hover {
+      color: $color-hover;
+    }
+
+    &:nth-child(2) {
+      margin-top: $column-spacing * 2;
+    }
+
+    .active,
+    &:visited.active {
+      color: $color-hover;
+    }
+
+  }
+
+
+  .h2 {
+    margin-left: 0;
+  }
+
+  .h3 {
+    margin-left: 0.8rem;
+  }
+
+  .h4 {
+    margin-left: 1.8rem;
+  }
+
+  .title {
+    font-size: 1.17em;
+    font-weight: $weight-medium;
+  }
+}
+
+#small-toc {
+  display: none;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: $color-page;
+}
+
+@mixin large-toc-spacing {
+  .h3 {
+    margin-left: 1.3rem;
+  }
+
+  .h4 {
+    margin-left: 2.8rem;
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+
+  .toc-container {
+    display: none;
+  }
+
+  #small-toc {
+    display: block;
+
+    a {
+      &:hover {
+        color: $color-blue;
+      }
+
+      &.active {
+        color: $color-blue;
+      }
+
+      &:nth-child(2) {
+        margin-top: 1rem;
+      }
+
+    }
+
+    @include large-toc-spacing;
+
+  }
+
+}
+
+@media (min-width: $large-breakpoint) {
+
+  .content {
+    width: $content-width-large;
+  }
+
+  .post-left {
+    width: 65%;
+  }
+
+  .post-right {
+    width: 35%;
+  }
+
+  #toc {
+    @include large-toc-spacing;
   }
 }
