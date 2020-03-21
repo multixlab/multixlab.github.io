@@ -1,7 +1,6 @@
 {% include header.html %}
 
-
-<div class="column left">
+<div class="column left post-left">
     <article class="spacing">
 
         <div class="display-area">
@@ -17,6 +16,9 @@
                     {% endfor %}
 
                 </div>
+
+                <div id="small-toc">
+                </div>
                 {{ content }}
             </div>
 
@@ -25,10 +27,17 @@
     </article>
 </div>
 
-<div class="column right">
+<div class="column right post-right sticky">
     <aside class="spacing">
 
-        {% include sidebar.html %}
+        <div class="display-area sidebar-margin toc-container">
+
+            <div id="toc">
+
+            </div>
+        </div>
+
+        {% include subscribe.html %}
 
     </aside>
 

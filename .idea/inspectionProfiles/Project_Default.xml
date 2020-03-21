@@ -10,6 +10,11 @@
     <inspection_tool class="CssUnknownTarget" enabled="true" level="ERROR" enabled_by_default="true">
       <scope name="Open Files" level="INFORMATION" enabled="true" />
     </inspection_tool>
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="139" name="JavaScript" />
+      </Languages>
+    </inspection_tool>
     <inspection_tool class="HtmlUnknownAnchorTarget" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="Open Files" level="INFORMATION" enabled="true" />
     </inspection_tool>
