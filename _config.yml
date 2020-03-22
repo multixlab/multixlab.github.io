@@ -23,3 +23,5 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+
+theme: minima
