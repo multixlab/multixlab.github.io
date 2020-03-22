@@ -24,4 +24,4 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-theme: minima
+theme: jekyll-theme-minimal
