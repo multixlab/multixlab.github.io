@@ -1,0 +1,50 @@
+.subscribe {
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  .form {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin: auto auto 1rem;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    display: block;
+    border: 0 none;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ccc;
+    padding: 5px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    &:hover {
+      transition: 1s;
+      color: white;
+      background: $color-primary;
+    }
+  }
+
+
+  .message {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  a,
+  a:visited {
+    color: $color-blue;
+  }
+}
