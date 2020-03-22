@@ -9,9 +9,7 @@
                 <h1>{{ page.title }}</h1>
                 <div class="meta">{{ page.date | date_to_string }},
                     <a title="Category" href="{{ site.url }}/categories/#{{ page.category | capitalize }}">
-                        {{page.category}}
-                    </a>,
-                    {% for tag in page.tags %}
+                        {{page.category}}</a>{%for tag in page.tags%},
                     <a title="tag" href="{{site.url}}/tags#{{ tag }}" class="tag">#{{ tag }}</a>
                     {% endfor %}
 
