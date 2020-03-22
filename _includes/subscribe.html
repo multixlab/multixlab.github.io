@@ -1,15 +1,14 @@
 <div class="display-area sidebar-margin subscribe">
-    <h4>Enter your email address</h4>
+    <h4>Get latest articles in your mail box</h4>
 
     <div class="form">
 
         <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
               onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=Multixlab', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
-            <input type="text" name="email" id="email"/>
+            <input type="text" name="email" id="email" placeholder="Enter your email address"/>
             <input type="hidden" value="Multixlab" name="uri"/>
             <input type="hidden" name="loc" value="en_US"/>
             <input type="submit" value="Subscribe" class="submit-button"/>
-            <p class="message">Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p>
         </form>
     </div>
 </div>
