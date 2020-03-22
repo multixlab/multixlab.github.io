@@ -11,7 +11,7 @@
 
   .post {
     font-size: 1.1rem;
-    margin: $column-spacing $column-spacing * 4;
+    margin: 0 $column-spacing * 4;
   }
 
   .post-date {
@@ -40,5 +40,12 @@
 
   }
 
+  li {
+    margin-bottom: 0.8rem;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
 
 }

@@ -1,39 +1,12 @@
 
-.left {
-  width: 70%;
+.all-posts {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  background-color: $color-page;
 
-  .spacing {
-    padding-right: $column-spacing;
-  }
-
-}
-
-.right {
-  width: 30%;
-
-  .spacing {
-    padding-left: $column-spacing;
-  }
-
-}
-
-
-@media (max-width: $medium-breakpoint) {
-
-  .right,
-  .left {
-    width: 100%;
-
-    .spacing {
-      padding: 0;
-    }
-  }
-
-  .left {
-    margin-bottom: 1rem;
-  }
-  .right {
-    margin-bottom: 0;
+  a,
+  a:visited{
+    color: $color-hover;
   }
 }
 
@@ -42,8 +15,6 @@
   $margin-bottom: 1.2rem;
 
   margin-bottom: $margin-bottom;
-  margin-left: $display-inside-margin;
-  margin-right: $display-inside-margin;
   border-bottom: 1px solid $color-border;
 
   .title {
@@ -79,10 +50,5 @@
     }
   }
 
-
-  @media (max-width: $small-breakpoint) {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
