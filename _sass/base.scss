@@ -98,11 +98,59 @@ a {
   margin: auto;
 }
 
+.left {
+  width: 70%;
+
+  .spacing {
+    padding-right: $column-spacing;
+  }
+
+}
+
+.right {
+  width: 30%;
+
+  .spacing {
+    padding-left: $column-spacing;
+  }
+
+  .display-area {
+    padding: $column-spacing * 2;
+  }
+
+}
+
+
+
+@media (max-width: $medium-breakpoint) {
+
+  .right,
+  .left {
+    width: 100%;
+
+    .spacing {
+      padding: 0;
+    }
+  }
+
+  .left {
+    margin-bottom: 1rem;
+  }
+  .right {
+    margin-bottom: 0;
+  }
+}
+
+
 .display-area {
   margin: auto;
-  padding: $column-spacing * 2;
   border: 1px solid $color-border;
   background-color: $color-display-background;
+  padding: $column-spacing * 2 $column-spacing * 3;
+
+  @media (max-width: $medium-breakpoint) {
+    padding: $column-spacing * 2;
+  }
 }
 
 pre {
