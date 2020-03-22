@@ -28,8 +28,9 @@ layout: default
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <h2 id="{{ this_word | cgi_escape }}">{{ this_word | capitalize }}</h2>
  
+  <ul class="post" >
      {% for post in site.tags[this_word] %}{% if post.title != null %}
-        <ul class="post" >
+       
           <li >
          
             <a href="{{site.url}}{{ post.url }}">{{ post.title  }}
@@ -40,10 +41,10 @@ layout: default
         
          
           </li>
-            </ul>
+           
          
         {% endif %}{% endfor %}
-  
+   </ul>
    
   {% endunless %}{% endfor %}
 </div>
