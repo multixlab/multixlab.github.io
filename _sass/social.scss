@@ -20,5 +20,18 @@
 }
 
 .social-bar {
-  margin: 1rem 0;
+  margin-top: 1.5rem;
+
+  @media (min-width: $large-breakpoint) {
+    display: none;
+  }
+}
+
+.social-sidebar {
+  display: none;
+
+  @media (min-width: $large-breakpoint) {
+    display: block;
+  }
+
 }
