@@ -25,15 +25,16 @@
     border: 0 none;
     font-size: 1rem;
     cursor: pointer;
-    background: #ccc;
+    color: white;
     padding: 5px 15px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
+    background-color: $color-primary;
 
     &:hover {
-      color: white;
       transition: 1s;
-      background: $color-primary;
+      background: #ccc;
+      color: $color-primary;
     }
   }
 

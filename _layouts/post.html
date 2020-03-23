@@ -1,6 +1,6 @@
 {% include header.html %}
 
-<div class="column left post-left">
+<div class="column left ">
     <article class="spacing">
 
         <div class="display-area">
@@ -15,9 +15,19 @@
 
                 </div>
 
+                <div class="social-bar">
+                    {% include social.html %}
+                </div>
+
+
                 <div id="small-toc">
                 </div>
                 {{ content }}
+
+                <div class="social-bar">
+                    {% include social.html %}
+                </div>
+
             </div>
 
         </div>
@@ -25,7 +35,7 @@
     </article>
 </div>
 
-<div class="column right post-right sticky">
+<div class="column right sticky">
     <aside class="spacing">
 
         <div class="display-area sidebar-margin toc-container">

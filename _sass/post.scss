@@ -63,6 +63,7 @@
 
 #toc,
 #small-toc {
+
   a {
     display: block;
     margin-top: 0.5rem;
@@ -160,14 +161,6 @@
 
   .content {
     width: $content-width-large;
-  }
-
-  .post-left {
-    width: 66%;
-  }
-
-  .post-right {
-    width: 34%;
   }
 
   #toc {
