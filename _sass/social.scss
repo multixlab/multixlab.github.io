@@ -1,45 +1,24 @@
-.fa {
-  width: 20px;
-  padding: 10px;
-  font-size: 3rem;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-}
-
 .social {
-  a {
-    margin-right: 5px;
+
+  a,
+  a:visited {
+    width: 30px;
+    padding: 4px 6px;
+    margin: 0 5px;
+    text-align: center;
+    color: $color-blue;
+    display: inline-block;
+    border: 1px solid $color-border;
   }
-  a:last-child {
-    margin: 0;
+
+  a:hover {
+    color: white;
+    transition: 0.7s;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
   }
 }
-.fa:hover {
-  opacity: 0.7;
-}
 
-.fa-facebook {
-  color: white;
-  background: #3B5998;
-}
-
-.fa-twitter {
-  color: white;
-  background: #55ACEE;
-}
-
-.fa-linkedin {
-  color: white;
-  background: #0073b1;
-}
-
-.fa-envelope {
-  color: white;
-  background: $color-primary;
-}
-
-.fa-rss {
-  color: white;
-  background: #f26522;
+.social-bar {
+  margin: 1rem 0;
 }
