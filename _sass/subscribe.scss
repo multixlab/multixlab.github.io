@@ -12,11 +12,14 @@
 
   input {
     width: 100%;
-    padding: 3px;
+    padding: 5px;
     display: block;
     font-size: 1rem;
     box-sizing: border-box;
+    border-radius: 2px;
     margin: auto auto 1rem;
+    -webkit-border-radius: 2px;
+    border: 1px solid $color-border;
   }
 
   input[type=submit] {
@@ -27,8 +30,8 @@
     cursor: pointer;
     color: white;
     padding: 5px 15px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
     background-color: $color-primary;
 
     &:hover {
