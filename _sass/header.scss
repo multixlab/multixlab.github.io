@@ -17,7 +17,6 @@ header {
 }
 
 
-
 .logo {
   font-size: 1.6rem;
   color: $color-logo;
@@ -74,11 +73,13 @@ nav {
 
     a {
       display: block;
-      padding-bottom: $padding * 0.5;
+      padding: .2rem 0;
+      margin-right: 2rem;
     }
 
     a:last-child {
-      padding-bottom: $padding;
+      padding-bottom: .2rem;
+      margin-bottom: .8rem;
     }
   }
 
