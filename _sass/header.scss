@@ -17,11 +17,17 @@ header {
 }
 
 
-.logo {
-  font-size: 1.6rem;
+@mixin logo-common() {
+  font-size: 1.3rem;
   color: $color-logo;
+  letter-spacing: 5px;
   align-items: center;
   display: inline-flex;
+  font-weight: $weight-medium;
+}
+
+.logo {
+  @include logo-common;
   height: $header-height;
 }
 
@@ -58,9 +64,7 @@ nav {
   .logo {
     width: 100%;
     height: auto;
-    display: flex;
-    font-size: 1.3rem;
-    letter-spacing: 5px;
+    @include logo-common;
     padding: $padding * 0.7 0;
     justify-content: center;
     border-bottom: 1px solid $color-secondary;
