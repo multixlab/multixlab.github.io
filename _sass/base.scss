@@ -20,7 +20,7 @@ body {
   margin: auto;
   word-spacing: 2px;
   color: $color-primary;
-  background: $color-page;
+  //background: $color-page;
   line-height: $line-height;
 }
 
@@ -120,9 +120,9 @@ a {
     padding-left: $column-spacing;
   }
 
-  .display-area {
+ /* .display-area {
     padding: $column-spacing * 2;
-  }
+  }*/
 
 }
 
@@ -149,12 +149,12 @@ a {
 
 .display-area {
   margin: auto;
-  border: 1px solid $color-border;
-  background-color: $color-display-background;
-  padding: $column-spacing * 2 $column-spacing * 3;
+  //border: 1px solid $color-border;
+  //background-color: $color-display-background;
+  //padding: $column-spacing * 2 $column-spacing * 3;
 
   @media (max-width: $medium-breakpoint) {
-    padding: $column-spacing * 2;
+    padding: $column-spacing;
   }
 }
 

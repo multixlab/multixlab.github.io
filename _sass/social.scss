@@ -8,14 +8,21 @@
     text-align: center;
     color: $color-blue;
     display: inline-block;
-    border: 1px solid $color-border;
   }
+
+  a:first-child {
+    margin-left: 0;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+
 
   a:hover {
     color: white;
     transition: 0.7s;
     background-color: $color-primary;
-    border: 1px solid $color-primary;
   }
 }
 
