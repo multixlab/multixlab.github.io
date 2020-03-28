@@ -1,3 +1,4 @@
+$nav-font-size: 1.25rem;
 
 header {
 
@@ -18,7 +19,7 @@ header {
 
 
 @mixin logo-common() {
-  font-size: 1.3rem;
+  font-size: $nav-font-size;
   color: $color-logo;
   letter-spacing: 5px;
   align-items: center;
@@ -44,7 +45,7 @@ nav {
   padding-left: $header-content-padding;
 
   a {
-    font-size: 1.3rem;
+    font-size: $nav-font-size;
     text-decoration: none;
     display: inline-block;
     color: $color-secondary;
