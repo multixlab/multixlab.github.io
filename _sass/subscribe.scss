@@ -22,22 +22,16 @@
     border: 1px solid $color-border;
   }
 
-  input[type=submit] {
-    width: 100%;
+  .link {
+    padding: 0 5px;
     display: block;
-    border: 0 none;
-    font-size: 1rem;
-    cursor: pointer;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
-    background-color: $color-primary;
+    margin-top: 1rem;
+    text-align: center;
+    border: 1px solid $color-border;
 
-    &:hover {
-      transition: 1s;
-      background: #ccc;
-      color: $color-primary;
+    &:hover,
+    &:visited:hover {
+      color: $color-hover;
     }
   }
 
