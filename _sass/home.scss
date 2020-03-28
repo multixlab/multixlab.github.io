@@ -5,7 +5,7 @@
   background-color: $color-page;
 
   a,
-  a:visited{
+  a:visited {
     color: $color-hover;
   }
 }
@@ -28,12 +28,24 @@
     color: $color-hover;
   }
 
-  .date {
+  .date,
+  .date a {
     font-size: 0.9rem;
     display: inline-block;
     color: $color-subtitle;
     margin-bottom: $margin-bottom;
     font-weight: $weight-medium;
+  }
+
+  .date {
+    a:visited {
+      color: $color-subtitle;
+    }
+
+    a:hover,
+    a:visited:hover {
+      color: $color-hover;
+    }
   }
 
   p {
