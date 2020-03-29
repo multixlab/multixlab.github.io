@@ -2,6 +2,8 @@ const headingTags = 'h2[id], h3[id], h4[id]';
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    backToTop();
+
     const toc = document.getElementById("toc");
 
     if (toc != null) {
@@ -15,14 +17,13 @@ function generateToc() {
     generateTocInId("small-toc");
 }
 
-
 function generateTocInId(id) {
     const firstLevelCounter = {count: 1};
     const toc = document.getElementById(id);
     const headings = document.querySelectorAll(headingTags);
 
     if (headings.length === 0) {
-       toc.classList.add("gone");
+        toc.classList.add("gone");
         return
     }
 
@@ -61,5 +62,26 @@ function createTocEntryFromHeading(heading, counter) {
     title.classList.add(depth);
 
     return title
+}
+
+function backToTop() {
+
+    const topButton = document.getElementById("top");
+
+    window.onscroll = function () {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            console.log("----------- display block");
+            topButton.style.display = "block";
+        } else {
+            console.log("----------- display none");
+            topButton.style.display = "none";
+        }
+    };
+
+}
+
+function goToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
 

@@ -10,6 +10,9 @@ html {
   letter-spacing: 0.3px;
   scroll-behavior: smooth;
   font-family: $font-family;
+  @media (max-width: $small-breakpoint) {
+    overflow-x: hidden;
+  }
 }
 
 input {
@@ -19,14 +22,13 @@ input {
 body {
   margin: auto;
   word-spacing: 2px;
+  overflow-x: hidden;
   color: $color-primary;
   line-height: $line-height;
 }
 
 body, html {
   height: 100%;
-  overflow-x: hidden;
-  font: 0.9em/1.692307em;
 }
 
 h1,
@@ -71,6 +73,29 @@ a {
   }
 }
 
+#top {
+  bottom: 20px;
+  right: 60px;
+  z-index: 99;
+  display: none;
+  position: fixed;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: $color-blue;
+
+  a,
+  a:hover,
+  a:visited {
+    color: $color-blue;
+  }
+
+  @media (max-width: $small-breakpoint) {
+    bottom: 5px;
+    right: 15px;
+  }
+
+}
 
 /*
   Container for all top body content except footer.
@@ -167,6 +192,7 @@ pre {
 
 .highlight {
   padding: 0.8rem;
+  overflow-x: hidden !important;
   background-color: $color-code-highlight;
 }
 
