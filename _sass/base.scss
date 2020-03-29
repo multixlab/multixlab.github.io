@@ -10,9 +10,9 @@ html {
   letter-spacing: 0.3px;
   scroll-behavior: smooth;
   font-family: $font-family;
-  @media (max-width: $small-breakpoint) {
+  /*@media (max-width: $small-breakpoint) {
     overflow-x: hidden;
-  }
+  }*/
 }
 
 input {
