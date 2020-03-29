@@ -148,6 +148,10 @@ a {
   display: none !important;
 }
 
+.disabled {
+  text-decoration: line-through;
+}
+
 @media (max-width: $medium-breakpoint) {
 
   .right,

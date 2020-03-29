@@ -33,11 +33,21 @@ layout: default
        
           <li >
          
-            <a href="{{site.url}}{{ post.url }}">{{ post.title  }}
-        
-        <span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> 
-        
-        </a>
+           {% if post.deprecated == true %}
+               <a class="disabled" title="this article is no long available">{{ post.title  }}
+                    
+                    <span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> 
+                    
+                    </a>
+             {% else %}
+               <a href="{{site.url}}{{ post.url }}">{{ post.title  }}
+                    
+                    <span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> 
+                    
+                    </a>
+             {% endif %}
+             
+         
         
          
           </li>

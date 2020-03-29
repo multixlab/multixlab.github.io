@@ -6,6 +6,7 @@ category: android
 tags: [best-practices]
 comments: true
 date: 2017-03-24
+deprecated: true
 ---
 
 > Working on code written by other programmers is a **nightmare** if it is not expressive and for every update you need to look around and start

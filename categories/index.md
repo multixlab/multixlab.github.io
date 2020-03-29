@@ -20,8 +20,16 @@ title: Categories
 
              
                     <li>
-                        <a title="{{ post.date | date_to_string }}" href="{{ site.url }}{{ post.url }}">
-                            {{ post.title }}&nbsp;<span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> </a>
+                    
+                      {% if post.deprecated == true %}
+                          <a title="this article is no longer available" class="disabled">
+                                                    {{ post.title }}&nbsp;<span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> </a>
+                        {% else %}
+                       <a title="{{ post.date | date_to_string }}" href="{{ site.url }}{{ post.url }}">
+                                                 {{ post.title }}&nbsp;<span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> </a>
+                        {% endif %}
+                        
+                      
                     </li>
 
                
