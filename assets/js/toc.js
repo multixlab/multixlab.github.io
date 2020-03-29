@@ -20,6 +20,12 @@ function generateTocInId(id) {
     const firstLevelCounter = {count: 1};
     const toc = document.getElementById(id);
     const headings = document.querySelectorAll(headingTags);
+
+    if (headings.length === 0) {
+       toc.classList.add("gone");
+        return
+    }
+
     toc.appendChild(createTocTitle());
 
     for (let heading of headings) {

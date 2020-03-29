@@ -121,6 +121,9 @@ a {
 
 }
 
+.gone {
+  display: none !important;
+}
 
 @media (max-width: $medium-breakpoint) {
 
