@@ -10,9 +10,6 @@ html {
   letter-spacing: 0.3px;
   scroll-behavior: smooth;
   font-family: $font-family;
-  /*@media (max-width: $small-breakpoint) {
-    overflow-x: hidden;
-  }*/
 }
 
 input {
@@ -83,6 +80,7 @@ a {
   padding: 0.5rem;
   cursor: pointer;
   color: $color-blue;
+  background-color: $color-page;
 
   a,
   a:hover,
