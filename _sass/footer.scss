@@ -8,4 +8,9 @@
   height: $footer-height;
   margin-top: -$footer-height;
   font-weight: $weight-medium;
+
+  @media (max-width: $small-breakpoint) {
+    background-color: $color-page;
+  }
+
 }
