@@ -188,8 +188,15 @@ pre {
   margin-bottom: 1rem;
 }
 
-.highlight {
+code,
+.highlighter-rouge {
+  background-color: $color-page;
+}
+
+.highlight,
+{
   padding: 0.8rem;
+  display: block;
   overflow-x: hidden !important;
   background-color: $color-code-highlight;
 }
