@@ -70,10 +70,8 @@ function backToTop() {
 
     window.onscroll = function () {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            console.log("----------- display block");
             topButton.style.display = "block";
         } else {
-            console.log("----------- display none");
             topButton.style.display = "none";
         }
     };
