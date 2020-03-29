@@ -15,3 +15,5 @@ rebase:
 	git push; \
 	git checkout -; fi \
 	}
+
+upload:	rebase multix
