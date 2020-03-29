@@ -2,27 +2,11 @@ const headingTags = 'h2[id], h3[id], h4[id]';
 
 window.addEventListener('DOMContentLoaded', () => {
 
-    generateToc();
+    const toc = document.getElementById("toc");
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            const tocEntry = document.querySelector(`div#toc a[href="#${id}"]`);
-
-            if (tocEntry !== null) {
-                if (entry.intersectionRatio > 0) {
-                    tocEntry.classList.add('active');
-                } else {
-                    tocEntry.classList.remove('active');
-                }
-            }
-        });
-    });
-
-    document.querySelectorAll(headingTags)
-        .forEach((heading) => {
-            observer.observe(heading);
-        });
+    if (toc != null) {
+        generateToc();
+    }
 
 });
 
