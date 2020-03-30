@@ -3,8 +3,8 @@
 
 <head>
     {% if jekyll.environment == 'production' %}
-        {% include analytics.html %}
-        {% include ad.html %}
+    {% include analytics.html %}
+    {% include ad.html %}
     {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +32,13 @@
     <header>
 
         <div class="content">
-            <a class="logo" href="{{site.url}}">
-                MULTIXLAB
-            </a>
+            <div class="logo-box">
+                <a class="logo" href="{{site.url}}">
+                    MULTIXLAB
+                </a>
+                <a class="fa fa-meanpath menu-icon"></a>
+            </div>
+
 
             {% include nav.html %}
         </div>

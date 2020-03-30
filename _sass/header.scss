@@ -62,8 +62,24 @@ nav {
 @media (max-width: $small-breakpoint) {
   $padding: 1rem;
 
-  .logo {
+  .logo-box {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .menu-icon {
+      float: right;
+    }
+
+    .logo {
+      order: -1;
+    }
+
+  }
+
+  .logo {
     height: auto;
     @include logo-common;
     padding: $padding * 0.7 0;
