@@ -29,7 +29,7 @@ function showHideMenu() {
 
     menu.style.display = display;
 
-    if(menuOpen) {
+    if (menuOpen) {
         menuIcon.classList.remove("fa-times");
         menuIcon.classList.add("fa-bars");
     } else {
@@ -43,9 +43,10 @@ function generateTocInId(id) {
     const firstLevelCounter = {count: 1};
     const toc = document.getElementById(id);
     const headings = document.querySelectorAll(headingTags);
-
     if (headings.length === 0) {
         toc.classList.add("gone");
+        const tocContainer = document.getElementById("toc-container");
+        tocContainer.style.display = "none";
         return
     }
 
