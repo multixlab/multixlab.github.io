@@ -19,3 +19,16 @@
   }
 
 }
+
+
+@media (max-width: $small-breakpoint) {
+  .tags {
+    margin-top: 1rem;
+  }
+
+  .categories {
+    margin-top: 1rem;
+  }
+
+}
+

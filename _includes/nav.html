@@ -1,4 +1,4 @@
-<nav>
+<nav id="menu">
 
     {% for nav in site.data.nav %}
     <a href="{{site.url}}{{ nav.url }}" class="{%if page.url == nav.url %}current{% endif %}">{{ nav.title }}</a>

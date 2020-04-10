@@ -3,7 +3,7 @@ title: Tags
 layout: default
 ---
 
- <h1 class="center">All {{ page.title }}</h1>
+ <h1 class="center tags">All {{ page.title }}</h1>
  
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 

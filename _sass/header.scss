@@ -23,20 +23,31 @@ header {
   color: $color-logo;
   letter-spacing: 5px;
   align-items: center;
-  display: inline-flex;
   font-weight: $weight-medium;
 }
 
 .logo {
   @include logo-common;
+  display: inline-flex;
   height: $header-height;
 }
 
-.current {
-  color: $color-primary;
+#menu {
+  .current {
+    color: $color-primary;
+  }
 }
 
-nav {
+
+.logo-box {
+  display: inline-flex;
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+nav#menu {
   float: right;
   align-items: center;
   display: inline-flex;
@@ -67,14 +78,18 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #8c9297;
 
 
     .menu-icon {
       float: right;
+      display: inline-flex;
+      margin-right: 1rem;
     }
 
     .logo {
       order: -1;
+      border: none;
     }
 
   }
@@ -82,16 +97,18 @@ nav {
   .logo {
     height: auto;
     @include logo-common;
+    display: inline-flex;
     padding: $padding * 0.7 0;
     justify-content: center;
     border-bottom: 1px solid $color-secondary;
   }
 
-  nav {
+  nav#menu {
     height: 100%;
     float: none;
-    display: block;
-    padding: $padding $padding 0;
+    display: none;
+    padding: $padding;
+    border-bottom: 1px solid $color-secondary;
 
     a {
       display: block;
@@ -99,10 +116,6 @@ nav {
       margin-right: 2rem;
     }
 
-    a:last-child {
-      margin-bottom: 1.5rem;
-      padding-bottom: .2rem;
-    }
   }
 
 }

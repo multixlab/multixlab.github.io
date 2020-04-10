@@ -5,17 +5,17 @@ title: Home
 
 {% for post in site.posts limit:15 %}
 
+{% if post.deprecated != true %}
 <div class="home-post">
-    {% if post.deprecated != true %}
+
     <a class="title" href="{{site.url}}{{post.url}}">{{ post.title }}</a>
 
     {% capture category %}{{ post.category }}{% endcapture %}
     <h3 class="date">{{ post.date | date_to_string }}, <a href="{{ site.url }}/categories/#{{category}}">{{ category
         }}</a></h3>
-    {% endif %}
-
 
 </div>
+{% endif %}
 {% endfor %}
 
 <div class="all-posts">
