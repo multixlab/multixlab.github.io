@@ -18,7 +18,9 @@ This is part *II* of two part series about force pushing in git.
 In [previous]({{page.part1}}){:.blue} article, we have discussed theory about `force push`. In this article, I will try to demonstrate all the
 scenarios by creating local repositories.
 
-## Step 1
+## Creating Local Repo
+
+### Repo 1
 
 Create a local `bare` repo - it will serve as our remote repository
 
@@ -36,7 +38,7 @@ config  description  HEAD  hooks/  info/  objects/  refs/
 
 {% endhighlight %}
 
-## Step 2
+### Repo 2
 
 Create another repository with name local1. This will be our local repository.
 
@@ -52,7 +54,7 @@ Now we have total **2** repositories.
 - myremote
 - local1
 
-## Step 3
+## Setting remote origin
 
 Set `myremote` as origin of  `local1`.
 
@@ -66,7 +68,7 @@ $ git remote add origin /f/Sandbox/gdemo/myremote/
 
 {% endhighlight %}
 
-## Step 4
+## Adding content to local repo 1
 
 Add a file with some content in `local1 repo`, commit and push it to remote.
 
@@ -129,7 +131,7 @@ Date:   Fri Feb 24 21:38:59 2017 +0500
 
 Now we have two commits from `local1` in `myremote` repo.
 
-## Step 5
+## Cloning repo
 
 Clone `myremote` and create another repo with name `local2`
 
@@ -141,7 +143,7 @@ done.
 
 At this point, we have both `local1` & `local2` pointing to same code and are synced with remote. 
 
-## Step 6 
+## Resetting last commit
 
 Reset the last commit in `local1`.
 
@@ -162,7 +164,7 @@ first line
 
 {% endhighlight %}
 
-## Step 7
+## Modifying repo 2
 
 Go to `local2`, modify the file and push it to remote.
 
@@ -202,7 +204,7 @@ c85f062 add second line
 
 At this point, remote must have our last commit (third line) and previous commits.
 
-## Step 8
+## Force pushing from repo 1
 
  Go to `local1` and force push you commit. Remote history will be overriden and out last commit from `local2` will disappear.
 
@@ -226,7 +228,7 @@ To F:/Sandbox/gdemo/myremote/
  {% endhighlight %}
 
 
-## Step 9
+## Confirming results
 
 Confirm it by cloning another repo `local3`. `local3` will be same as `local1`, **see! commit from `local2` has disappeared**
 

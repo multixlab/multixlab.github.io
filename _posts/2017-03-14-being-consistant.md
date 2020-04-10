@@ -2,8 +2,8 @@
 layout: post
 title: Being consistent
 modified: 19-Mar-2017 (22:03)
-category: wisdom
-tag: [wisdom, best-practices]
+category: random
+tag: [random, best-practices]
 comments: true
 date: 2017-03-14
 ---

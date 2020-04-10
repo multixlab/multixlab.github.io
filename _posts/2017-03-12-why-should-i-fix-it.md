@@ -2,9 +2,9 @@
 layout: post
 title: Why should I fix it?
 modified: 12-Mar-2017 (13:34)
-category: wisdom
+category: random
 comments: true
-tag: wisdom
+tag: random
 date: 2017-03-12
 ashfaq_ahmed: "https://en.wikipedia.org/wiki/Ashfaq_Ahmed"
 ---

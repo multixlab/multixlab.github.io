@@ -8,8 +8,6 @@ date: 2017-02-03
 tags: [java, threads]
 ---
 
-## Background
-
 A [Semaphore](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Semaphore.html){:.blue} synchronizes access to a shared resource. With trivial synchronized blocks, only one thread can enter the *critical section* at a time,
 with `Semaphores` there is no restriction. We can define the no. of threads accessing the shared source while initializing the `Semaphore`.
 

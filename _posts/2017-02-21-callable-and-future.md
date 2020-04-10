@@ -11,8 +11,6 @@ future: "http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/Future.ht
 exservice: "https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/ExecutorService.html"
 ---
 
-## Callable
-
 A [Callable]({{page.callable}}){:.blue}  is a generic interface, represents a thread which will return a value.
 It has a single method `call()` which throws `Exception` and returns an object of given type.
 

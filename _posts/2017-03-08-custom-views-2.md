@@ -13,11 +13,10 @@ link2: "/custom-views-2/"
 link3: "/custom-views-3/"
 ---
 
-This is part 1 of three part series
+This is part 2 of two part series
 
 - [Part 1]({{site.url}}{{page.link1}}){:.blue}
 - [Part 2]({{site.url}}{{page.link2}}){:.blue}
-- [Part 3]({{site.url}}{{page.link3}}){:.blue}
 
 In [part 1]({{site.url}}{{page.link1}}){:.blue}, I have discussed core view classes and view types of view constructor. This article focuses on view drawing in its
 layout in parent view.
@@ -195,5 +194,3 @@ After setting the size on view, it calls `onSizeChanged(..)` if the size of view
 {% endhighlight %}
 
 Default implementation of both `onSizeChanged` and `onLayout` is no-op.
-
-Read part 3 [here]({{page.link3}}){:.blue}.

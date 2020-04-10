@@ -18,11 +18,11 @@ const_3: "https://developer.android.com/reference/android/view/View.html#View(an
 style_const: "https://developer.android.com/reference/android/view/View.html#View(android.content.Context, android.util.AttributeSet, int, int)"
 ---
 
-This is part 1 of three part series
+This is part 1 of two part series
 
 - [Part 1]({{site.url}}{{page.link1}}){:.blue}
 - [Part 2]({{site.url}}{{page.link2}}){:.blue}
-- [Part 3]({{site.url}}{{page.link3}}){:.blue}
+
 
 
 ## Background

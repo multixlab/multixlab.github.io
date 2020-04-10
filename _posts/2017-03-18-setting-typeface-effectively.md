@@ -6,6 +6,7 @@ category: android
 comments: true
 tags: [performance]
 date: 2017-03-18
+deprecated: true
 source_code: "https://github.com/allaudin/fontperformancetest"
 meta: While I know setting typeface on a TextView is not a big deal but setting it in a wrong can effect the performance of your app badly. First
       approach that is being used by many developers is calling setTypeface on TextView 
