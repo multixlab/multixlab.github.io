@@ -7,15 +7,15 @@ comments: true
 tags:
 - android
 date: 2017-02-22
-part1: "https://allaudin.github.io/pending-intent/"
-part2: "https://allaudin.github.io/pending-intent-part-2/"
+part1: "/pending-intent/"
+part2: "/pending-intent-part-2/"
 pintent: "https://developer.android.com/reference/android/app/PendingIntent.html"
 ---
 
 This is part 1 of two parts pending intent series.
 
-- [Part 1]({{page.part1}}){:.blue}
-- [Part 2]({{page.part2}}){:.blue}
+- [Part 1]({{site.url}}{{page.part1}}){:.blue}
+- [Part 2]({{site.url}}{{page.part2}}){:.blue}
 
 ## What is it?
 
