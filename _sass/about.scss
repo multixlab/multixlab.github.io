@@ -1,0 +1,18 @@
+.stack-profile {
+  background-color: #cccccc;
+
+  @media (max-width: $medium-breakpoint) {
+    background-color: inherit;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+  }
+}
+
+.about {
+  h2 {
+    margin: 1rem 0;
+  }
+}

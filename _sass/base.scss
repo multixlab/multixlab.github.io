@@ -185,7 +185,7 @@ pre {
 }
 
 .sidebar-margin {
-  margin-bottom: $column-spacing * 2;
+  margin-bottom: $column-spacing * 3;
 }
 
 .sidebar-title {
@@ -225,8 +225,8 @@ blockquote {
     width: $content-width-medium;
   }
 
-  .sidebar-margin:last-child {
-    margin-bottom: 0
+  .sidebar-margin {
+    margin-bottom: $column-spacing
   }
 
 }

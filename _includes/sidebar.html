@@ -1,13 +1,19 @@
-
 {% include subscribe.html %}
 
 <div class="display-area sidebar-margin">
     {% include social.html %}
 </div>
 
-<!--
-{% include categories.html %}
+{%if page.url == "/about/" %}
 
-{% if page.url != "/tags/" %}
-{% include tags.html %}
-{% endif %}-->
+<div class="display-area sidebar-margin">
+    <div class="stack-profile">
+        <a href="https://stackexchange.com/users/3097144">
+            <img src="https://stackexchange.com/users/flair/3097144.png"
+                 alt="profile for mallaudin on Stack Exchange, a network of free, community-driven Q&amp;A sites"
+                 title="profile for mallaudin on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+        </a>
+    </div>
+</div>
+
+{% endif %}
