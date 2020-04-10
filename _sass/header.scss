@@ -81,15 +81,18 @@ nav#menu {
     border-bottom: 1px solid #8c9297;
 
 
+    $logo-margin: 0.8rem;
+
     .menu-icon {
       float: right;
       display: inline-flex;
-      margin-right: 1rem;
+      margin-right: $logo-margin;
     }
 
     .logo {
       order: -1;
       border: none;
+      margin-left: $logo-margin;
     }
 
   }
