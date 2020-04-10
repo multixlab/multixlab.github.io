@@ -62,7 +62,7 @@
 
   @media (max-width: $small-breakpoint) {
     &:first-child {
-      margin-top: $margin-bottom;
+      margin-top: $margin-bottom * 0.7;
     }
   }
 }
