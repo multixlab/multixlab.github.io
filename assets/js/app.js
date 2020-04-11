@@ -82,6 +82,7 @@ function createTocEntryFromHeading(heading, counter) {
 
     title.innerHTML = prepend + " " + heading.innerHTML;
     title.href = '#' + heading.id;
+    title.setAttribute("title", heading.innerText);
     title.classList.add(depth);
 
     return title
