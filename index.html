@@ -18,6 +18,8 @@ title: Home
 {% endif %}
 {% endfor %}
 
+{% if site.posts.size > 14 %}
 <div class="all-posts">
     Want to read more? There are {{site.posts.size}} articles in the <a title="Archive" href="{{site.url}}/archive">archive</a>
 </div>
+{% endif %}
