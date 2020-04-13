@@ -3,20 +3,35 @@ layout: default
 title: Home
 ---
 
-{% for post in site.posts limit:15 %}
 
-{% if post.deprecated != true %}
-<div class="home-post">
+<div class="post-list">
+    {% for post in site.posts %}
+    {% capture current_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if forloop.first %}
+    <h2 id="{{current_year}}">{{current_year}}</h2>
+    <ul class="post">
+        {% else %}
+        {% if current_year != last_year %}
+    </ul>
+    <h2>{{current_year}}</h2>
+    <ul class="post">
+        {% endif %}
+        {% endif %}
+        <li>
+            {% if post.deprecated == true %}
+            <a title="this article is no longer available" class="disabled">
+                {{ post.title }}&nbsp;<span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> </a>
+            {% else %}
+            <a title="{{ post.date | date_to_string }}" href="{{ site.url }}{{ post.url }}">
+                {{ post.title }}&nbsp;<span class="post-date">—&nbsp;{{ post.date | date_to_string }}</span> </a>
+            {% endif %}
+        </li>
+        {% if forloop.last %}
+    </ul>
+    {% endif %}
 
-    <a class="title" href="{{site.url}}{{post.url}}">{{ post.title }}</a>
-    <h3 class="date">{{ post.date | date_to_string }}</h3>
+    {% capture last_year %}{{ current_year }}{% endcapture %}
 
+    {% endfor %}
 </div>
-{% endif %}
-{% endfor %}
 
-{% if site.posts.size > 14 %}
-<div class="all-posts">
-    Want to read more? There are {{site.posts.size}} articles in the <a title="Archive" href="{{site.url}}/archive">archive</a>
-</div>
-{% endif %}
