@@ -9,10 +9,7 @@ title: Home
 <div class="home-post">
 
     <a class="title" href="{{site.url}}{{post.url}}">{{ post.title }}</a>
-
-    {% capture category %}{{ post.category }}{% endcapture %}
-    <h3 class="date">{{ post.date | date_to_string }}, <a href="{{ site.url }}/categories/#{{category | capitalize }}">{{ category
-        }}</a></h3>
+    <h3 class="date">{{ post.date | date_to_string }}</h3>
 
 </div>
 {% endif %}
